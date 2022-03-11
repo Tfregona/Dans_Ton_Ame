@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* CSS FOR SWIPER */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #A2A09D;
+}
+
+.swiper-button-clickable .swiper-button-prev {
+  color: #ff9900 !important;
+}

@@ -1,9 +1,11 @@
-import Caroussel from "../components/caroussel";
+import Swiper from "../components/swiper";
+import Test from "../components/test";
 
 export default function Home() {
   return (
     <div>
-      <Caroussel />
+      <Swiper />
+      <Test />
     </div>
   );
 }

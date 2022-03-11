@@ -65,11 +65,13 @@ export default function Navbar() {
               </div>
               {/* Center logo */}
               <div className="flex-shrink-0 flex items-center">
-                <img
-                  className="h-20 w-auto"
-                  src="/img/logo/rectangle.svg"
-                  alt="Logo Dans ton âme"
-                />
+                <Link href="/">
+                  <img
+                    className="h-20 w-auto cursor-pointer"
+                    src="/img/logo/rectangle.svg"
+                    alt="Logo Dans ton âme"
+                  />
+                </Link>
               </div>
               {/* Right size */}
               <div className="flex-1 flex items-center justify-center sm:items-stretch">

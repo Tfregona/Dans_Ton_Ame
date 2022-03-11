@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
+      <div className="min-h-screen bg-gray-500"></div>
       <Footer />
     </>
   );
