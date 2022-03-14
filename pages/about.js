@@ -7,8 +7,8 @@ export default function About() {
             </div>
             <div>
                 <div>
-                <img src={} alt={} />
-                <img src={} alt={} />
+                {/* <img src={} alt={} /> */}
+                {/* <img src={} alt={} /> */}
                      
                 </div>
                 <div>
