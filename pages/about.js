@@ -3,7 +3,7 @@ export default function About() {
         <div>
             <div>
                 <p>Latum</p>
-                <img src={} alt={} />
+                {/* <img src={} alt={} /> */}
             </div>
             <div>
                 <div>
