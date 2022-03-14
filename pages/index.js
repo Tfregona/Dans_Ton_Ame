@@ -13,7 +13,6 @@ export default function Home() {
       <Swiper />
       {/* Why */}
       <Why />
-      <p className="text-center font-apercu">La sophrologie & vous</p>
       {/* You */}
       <You />
       {/* Sessions */}

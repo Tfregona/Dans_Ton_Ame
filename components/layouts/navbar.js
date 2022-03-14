@@ -3,6 +3,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 const NavigationResponsive = [
+  { name: "ACCUEIL", href: "/", current: false },
   { name: "À PROPOS", href: "/about", current: false },
   { name: "BLOG", href: "/blog", current: false },
   { name: "PRÉSTATIONS", href: "/services", current: false },
@@ -10,6 +11,7 @@ const NavigationResponsive = [
 ];
 
 const NavigationLeft = [
+  { name: "ACCUEIL", href: "/", current: false },
   { name: "À PROPOS", href: "/about", current: false },
   { name: "BLOG", href: "/blog", current: false },
 ];
