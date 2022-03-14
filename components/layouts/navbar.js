@@ -3,20 +3,20 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 const NavigationResponsive = [
-  { name: "À propos", href: "/about", current: false },
-  { name: "Blog", href: "/blog", current: false },
-  { name: "Préstations", href: "/services", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "À PROPOS", href: "/about", current: false },
+  { name: "BLOG", href: "/blog", current: false },
+  { name: "PRÉSTATIONS", href: "/services", current: false },
+  { name: "CONTACT", href: "/contact", current: false },
 ];
 
 const NavigationLeft = [
-  { name: "À propos", href: "/about", current: false },
-  { name: "Blog", href: "/blog", current: false },
+  { name: "À PROPOS", href: "/about", current: false },
+  { name: "BLOG", href: "/blog", current: false },
 ];
 
 const NavigationRight = [
-  { name: "Préstations", href: "/services", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "PRÉSTATIONS", href: "/services", current: false },
+  { name: "CONTACT", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -52,7 +52,7 @@ export default function Navbar() {
                             item.current
                               ? "bg-gray-900 text-white"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
+                            "px-3 py-2 rounded-md font-epilogue font-bold"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -84,7 +84,7 @@ export default function Navbar() {
                             item.current
                               ? "bg-gray-900 text-white"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
+                            "px-3 py-2 rounded-md font-epilogue font-bold"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -107,7 +107,7 @@ export default function Navbar() {
                       item.current
                         ? "bg-gray-900 text-white"
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "block px-3 py-2 rounded-md text-base font-medium"
+                      "block px-3 py-2 rounded-md"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >

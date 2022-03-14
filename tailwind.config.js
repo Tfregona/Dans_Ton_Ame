@@ -24,7 +24,14 @@ module.exports = {
       dta_gray: "#E1D7D6",
       dta_graydark: "#A2A09D",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        fraunces: ['"Fraunces"'],
+        apercu: ['"Apercu"'],
+        epilogue: ['"Epilogue"'],
+        steinfeld: ['"Steinfeld"'],
+      },
+    },
   },
   plugins: [],
 };

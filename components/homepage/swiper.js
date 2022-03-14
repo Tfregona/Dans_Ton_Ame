@@ -6,10 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/effect-fade";
 
 // import required modules
-import { EffectFade, Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function SwiperComponent() {
   const Images = [
@@ -35,6 +34,10 @@ export default function SwiperComponent() {
   return (
     <>
       <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -44,13 +47,13 @@ export default function SwiperComponent() {
         pagination={{
           clickable: true,
         }}
-        effect={"fade"}
+        // effect={"fade"}
         navigation={true}
-        modules={[EffectFade, Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {Images.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={image.name}>
             <div
               key={image.name}
               style={{
@@ -59,10 +62,12 @@ export default function SwiperComponent() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
+              className="p-36"
             >
-              <p className="p-20">
-                Lorem etum latum
-              </p>
+              <div className="p-20 bg-white/50 max-w-min">
+                <p className="whitespace-nowrap">Lorem etum latum</p>
+                <p>{image.description}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

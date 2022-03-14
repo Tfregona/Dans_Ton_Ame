@@ -1,3 +1,5 @@
+import Test from "../components/test";
+
 export default function Colors() {
   return (
     <>
@@ -7,6 +9,7 @@ export default function Colors() {
       <div className="bg-dta_graylight h-20">bg-dta_graylight</div>
       <div className="bg-dta_gray h-20">bg-dta_gray</div>
       <div className="bg-dta_graydark h-20">bg-dta_graydark</div>
+      <Test />
     </>
   );
 }
