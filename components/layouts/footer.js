@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="bg-gray-100">
         <div className="p-6 max-w-7xl mx-auto lg:px-8 flex justify-center items-center lg:justify-between border-b border-gray-300">
           <div>
-            <p className="text-xl lg:absolute text-white">
+            <p className="text-xl lg:absolute text-black font-steinfeld">
               Get connected with us on social networks:
             </p>
             <div className="hidden lg:grid grid-cols-5 gap-4 mt-4">
