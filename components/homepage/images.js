@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Images() {
   const Images = [
     { source: "/img/homepage/home2.jpg", name: "Femme faisant du yoga" },
@@ -11,8 +13,16 @@ export default function Images() {
           className="rounded-t-full overflow-hidden flex items-center justify-center"
           key={image.name}
         >
-          <img src={image.source} alt={image.name} className="" />
-          <div className="h-8 w-8 -mb-4 absolute self-end flex items-center justify-center rounded-full bg-dta_pink">
+          <div className="block">
+            <Image
+              width={1000}
+              height={1500}
+              loading="eager"
+              src={image.source}
+              alt={image.name}
+            />
+          </div>
+          <div className="h-16 w-16 -mb-6 absolute self-end flex items-center justify-center rounded-full bg-dta_pink">
             <div className="h-4 w-4 rounded-full bg-dta_gray"></div>
           </div>
         </div>

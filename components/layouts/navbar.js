@@ -7,7 +7,6 @@ const NavigationResponsive = [
   { name: "À PROPOS", href: "/about", current: false },
   { name: "BLOG", href: "/blog", current: false },
   { name: "PRÉSTATIONS", href: "/services", current: false },
-  { name: "CONTACT", href: "/contact", current: false },
 ];
 
 const NavigationLeft = [
@@ -18,7 +17,6 @@ const NavigationLeft = [
 
 const NavigationRight = [
   { name: "PRÉSTATIONS", href: "/services", current: false },
-  { name: "CONTACT", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {

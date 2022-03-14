@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function You() {
   const Content = [
     {
@@ -37,7 +39,13 @@ export default function You() {
       <div className="bg-dta_pinklight">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="hidden md:block">
-            <img src="/img/homepage/home1.jpg" alt="Desktop" />
+            <Image
+              width={1000}
+              height={1500}
+              layout="responsive"
+              src="/img/homepage/home1.jpg"
+              alt="Desktop"
+            />
           </div>
           <div className="col-span-2 flex-1 flex items-center justify-center">
             <div>

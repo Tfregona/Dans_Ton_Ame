@@ -1,24 +1,31 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Footer() {
   const Images = [
-    { name: "Livre", src: "/img/footer/footer1.jpg" },
-    { name: "Méditation", src: "/img/footer/footer2.jpg" },
-    { name: "Yoga", src: "/img/footer/footer3.jpg" },
-    { name: "Sauge", src: "/img/footer/footer4.jpg" },
-    { name: "Cristal", src: "/img/footer/footer5.jpg" },
+    { name: "Livre", source: "/img/footer/footer1.jpg" },
+    { name: "Méditation", source: "/img/footer/footer2.jpg" },
+    { name: "Yoga", source: "/img/footer/footer3.jpg" },
+    { name: "Sauge", source: "/img/footer/footer4.jpg" },
+    { name: "Cristal", source: "/img/footer/footer5.jpg" },
   ];
   return (
     <footer className="text-center lg:text-left text-gray-600">
       <div className="bg-gray-100">
         <div className="p-6 max-w-7xl mx-auto lg:px-8 flex justify-center items-center lg:justify-between border-b border-gray-300">
           <div>
-            <p className="text-xl lg:absolute text-black font-steinfeld">
+            <p className="text-xl lg:absolute z-10 text-black font-steinfeld">
               Get connected with us on social networks:
             </p>
             <div className="hidden lg:grid grid-cols-5 gap-4 mt-4">
               {Images.map((image) => (
-                <img key={image.name} src={image.src} alt={image.name} />
+                <Image
+                  width={1000}
+                  height={1000}
+                  key={image.name}
+                  src={image.source}
+                  alt={image.name}
+                />
+                // <img key={image.name} src={image.src} alt={image.name} />
               ))}
             </div>
           </div>
