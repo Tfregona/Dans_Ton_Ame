@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer1 from "../../public/img/footer/footer1.jpg";
-import Footer2 from "../../public/img/footer/footer2.jpg";
-import Footer3 from "../../public/img/footer/footer3.jpg";
-import Footer4 from "../../public/img/footer/footer4.jpg";
-import Footer5 from "../../public/img/footer/footer5.jpg";
+import Footer1 from "../../public/img/footer/footer1.jpeg";
+import Footer2 from "../../public/img/footer/footer2.jpeg";
+import Footer3 from "../../public/img/footer/footer3.jpeg";
+import Footer4 from "../../public/img/footer/footer4.jpeg";
+import Footer5 from "../../public/img/footer/footer5.jpeg";
 
 export default function Footer() {
   const Images = [

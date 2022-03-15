@@ -14,19 +14,19 @@ export default function SwiperComponent() {
   const Images = [
     {
       name: "Méditation",
-      src: "/img/swiper/swiper1.jpg",
+      src: "/img/swiper/swiper1.jpeg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
     {
       name: "Bol tibétain",
-      src: "/img/swiper/swiper2.jpg",
+      src: "/img/swiper/swiper2.jpeg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
     {
       name: "Cristaux",
-      src: "/img/swiper/swiper3.jpg",
+      src: "/img/swiper/swiper3.jpeg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },

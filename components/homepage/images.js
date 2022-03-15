@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Home2 from "../../public/img/homepage/home2.jpg"
-import Home3 from "../../public/img/homepage/home3.jpg"
-import Home4 from "../../public/img/homepage/home4.jpg"
+import Home2 from "../../public/img/homepage/home2.jpeg"
+import Home3 from "../../public/img/homepage/home3.jpeg"
+import Home4 from "../../public/img/homepage/home4.jpeg"
 
 export default function Images() {
   const Images = [
