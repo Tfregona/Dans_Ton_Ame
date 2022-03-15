@@ -8,7 +8,7 @@ import Contact from "../components/homepage/contact";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-dta_graylight">
       {/* Swiper */}
       <Swiper />
       {/* Why */}

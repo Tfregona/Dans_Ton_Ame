@@ -29,11 +29,16 @@ export default function Why() {
   ];
   return (
     <div className="bg-dta_pinklight">
-      <div className="p-6 my-8 max-w-7xl mx-auto lg:px-8">
-        <p className="text-center font-apercu">POURQUOI LA SOPHROLOGIE ET LES MÉDECINES DOUCES ?</p>
+      <div className="px-6 pb-10 mt-4 max-w-7xl mx-auto lg:px-8">
+        <p className="text-center font-apercu text-xl py-10">
+          POURQUOI LA SOPHROLOGIE ET LES MÉDECINES DOUCES ?
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {Content.map((item) => (
-            <div className="flex items-center text-justify space-x-1" key={item.id}>
+            <div
+              className="flex items-center text-justify space-x-1"
+              key={item.id}
+            >
               <div>
                 <svg
                   width="24"

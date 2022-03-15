@@ -36,8 +36,8 @@ export default function You() {
   ];
   return (
     <>
-      <p className="text-center font-apercu">La sophrologie & vous</p>
-      <div className="bg-dta_pinklight">
+      <p className="py-14 text-center font-steinfeld text-5xl">La sophrologie et vous</p>
+      <div className="px-6 max-w-7xl mx-auto lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="hidden md:block">
             <Image
@@ -49,15 +49,15 @@ export default function You() {
               alt="Desktop"
             />
           </div>
-          <div className="col-span-2 flex-1 flex items-center justify-center">
+          <div className="col-span-2 flex-1 flex items-center justify-end">
             <div>
               <p className="text-center font-apercu">
                 TRAVAILLER AVEC MOI C’EST ...
               </p>
               <div className="flex-1 flex items-center">
-                <div className="flex flex-col space-y-4 mx-auto">
+                <div className="flex flex-col space-y-4">
                   {Content.map((item) => (
-                    <p className="" key={item.id}>
+                    <p key={item.id}>
                       {item.description}
                     </p>
                   ))}
