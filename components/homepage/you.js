@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DesktopImage from "../../public/img/homepage/home1.jpeg"
+import DesktopImage from "../../public/img/homepage/home1.jpeg";
 
 export default function You() {
   const Content = [
@@ -36,10 +36,12 @@ export default function You() {
   ];
   return (
     <>
-      <p className="py-14 text-center font-steinfeld text-5xl">La sophrologie et vous</p>
+      <p className="py-14 text-center font-steinfeld text-5xl">
+        La sophrologie et vous
+      </p>
       <div className="px-6 max-w-7xl mx-auto lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="hidden md:block">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="hidden lg:block pl-44 pr-10">
             <Image
               width={1000}
               height={1500}
@@ -49,20 +51,14 @@ export default function You() {
               alt="Desktop"
             />
           </div>
-          <div className="col-span-2 flex-1 flex items-center justify-end">
-            <div>
-              <p className="text-center font-apercu">
-                TRAVAILLER AVEC MOI C’EST ...
-              </p>
-              <div className="flex-1 flex items-center">
-                <div className="flex flex-col space-y-4">
-                  {Content.map((item) => (
-                    <p key={item.id}>
-                      {item.description}
-                    </p>
-                  ))}
-                </div>
-              </div>
+          <div>
+            <p className="p-10 text-center font-apercu">
+              TRAVAILLER AVEC MOI C’EST ...
+            </p>
+            <div className="flex flex-col space-y-2">
+              {Content.map((item) => (
+                <p key={item.id} className="">○ {item.description}</p>
+              ))}
             </div>
           </div>
         </div>

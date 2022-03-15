@@ -52,7 +52,7 @@ export default function Sessions() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Content.map((item) => (
             <div className="flex flex-col" key={item.id}>
-              <div className="mx-auto w-24">
+              <div className="mx-auto w-14">
                 {/* <img src={item.image} alt={item.description} /> */}
                 <Image
                   width={1000}
