@@ -1,12 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
+import Footer1 from "../../public/img/footer/footer1.jpg";
+import Footer2 from "../../public/img/footer/footer2.jpg";
+import Footer3 from "../../public/img/footer/footer3.jpg";
+import Footer4 from "../../public/img/footer/footer4.jpg";
+import Footer5 from "../../public/img/footer/footer5.jpg";
+
 export default function Footer() {
   const Images = [
-    { name: "Livre", source: "/img/footer/footer1.jpg" },
-    { name: "Méditation", source: "/img/footer/footer2.jpg" },
-    { name: "Yoga", source: "/img/footer/footer3.jpg" },
-    { name: "Sauge", source: "/img/footer/footer4.jpg" },
-    { name: "Cristal", source: "/img/footer/footer5.jpg" },
+    { name: "Livre", source: Footer1 },
+    { name: "Méditation", source: Footer2 },
+    { name: "Yoga", source: Footer3 },
+    { name: "Sauge", source: Footer4 },
+    { name: "Cristal", source: Footer5 },
   ];
   return (
     <footer className="text-center lg:text-left text-gray-600">
@@ -21,11 +27,11 @@ export default function Footer() {
                 <Image
                   width={1000}
                   height={1000}
+                  placeholder="blur"
                   key={image.name}
                   src={image.source}
                   alt={image.name}
                 />
-                // <img key={image.name} src={image.src} alt={image.name} />
               ))}
             </div>
           </div>

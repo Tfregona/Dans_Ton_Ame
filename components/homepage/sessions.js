@@ -1,38 +1,46 @@
+import Image from "next/image";
+import Sessions1 from "../../public/img/homepage/sessions1.png"
+import Sessions2 from "../../public/img/homepage/sessions2.png"
+import Sessions3 from "../../public/img/homepage/sessions3.png"
+import Sessions4 from "../../public/img/homepage/sessions4.png"
+import Sessions5 from "../../public/img/homepage/sessions5.png"
+import Sessions6 from "../../public/img/homepage/sessions6.png"
+
 export default function Sessions() {
   const Content = [
     {
       id: 1,
-      image: "/img/homepage/sessions1.png",
+      image: Sessions1,
       description:
         "SOPHROLOGIE",
     },
     {
       id: 2,
-      image: "/img/homepage/sessions2.png",
+      image: Sessions2,
       description:
         "MÉDITATION ET RELAXATION",
     },
     {
       id: 3,
-      image: "/img/homepage/sessions3.png",
+      image: Sessions3,
       description:
         "COACHING",
     },
     {
       id: 4,
-      image: "/img/homepage/sessions4.png",
+      image: Sessions4,
       description:
         "YOGA NIDRA ET YOGA DU SOUFFLE",
     },
     {
       id: 5,
-      image: "/img/homepage/sessions5.png",
+      image: Sessions5,
       description:
         "LITHOTHÉRAPIE",
     },
     {
       id: 6,
-      image: "/img/homepage/sessions6.png",
+      image: Sessions6,
       description:
         "AUDIOS ET FICHES PERSONNALISÉS",
     },
@@ -45,7 +53,14 @@ export default function Sessions() {
           {Content.map((item) => (
             <div className="flex flex-col" key={item.id}>
               <div className="mx-auto w-24">
-                <img src={item.image} alt={item.description} />
+                {/* <img src={item.image} alt={item.description} /> */}
+                <Image
+                  width={1000}
+                  height={1000}
+                  placeholder="blur"
+                  src={item.image}
+                  alt={item.name}
+                />
               </div>
               <p>{item.description}</p>
             </div>

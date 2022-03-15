@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DesktopImage from "../../public/img/homepage/home1.jpg"
 
 export default function You() {
   const Content = [
@@ -43,7 +44,8 @@ export default function You() {
               width={1000}
               height={1500}
               layout="responsive"
-              src="/img/homepage/home1.jpg"
+              placeholder="blur"
+              src={DesktopImage}
               alt="Desktop"
             />
           </div>
