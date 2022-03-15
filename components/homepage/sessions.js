@@ -41,7 +41,8 @@ export default function Sessions() {
   ];
   return (
     <div className="p-6 md:my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu text-dta_graydark">
-      <p className="p-4 md:p-10 text-xl">LES SÉANCES</p>
+      <div className="h-[0.1rem] w-44 mx-auto bg-dta_graydark"></div>
+      <p className="p-4 md:p-10 text-xl font-light">LES SÉANCES</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {Content.map((item) => (
           <div className="flex flex-col" key={item.id}>

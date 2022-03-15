@@ -31,9 +31,9 @@ export default function Why() {
     { id: 6, description: "Adopter un mode de vie serein, sain et positif" },
   ];
   return (
-    <div className="bg-dta_pinklight text-dta_brown">
+    <div className="bg-dta_brown text-dta_gray">
       <div className="px-6 pb-10 mt-4 max-w-7xl mx-auto lg:px-8">
-        <p className="text-center font-apercu text-xl py-10">
+        <p className="py-10 text-center font-apercu text-xl font-light">
           POURQUOI LA SOPHROLOGIE ET LES MÉDECINES DOUCES ?
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -42,7 +42,7 @@ export default function Why() {
               className="flex items-center text-justify space-x-4"
               key={item.id}
             >
-              <div className="w-8 flex items-center text-justify">
+              <div className="w-7 flex items-center text-justify">
                 <Image
                   width={1000}
                   height={1000}

@@ -53,7 +53,7 @@ export default function You() {
             />
           </div>
           <div>
-            <p className="p-4 md:p-10 text-center font-apercu text-xl">
+            <p className="p-4 md:p-10 text-center font-apercu text-xl font-light">
               TRAVAILLER AVEC MOI C’EST ...
             </p>
             <div className="flex flex-col space-y-2">
