@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DesktopImage from "../../public/img/homepage/home1.jpg"
+import DesktopImage from "../../public/img/homepage/home1.jpeg"
 
 export default function You() {
   const Content = [
