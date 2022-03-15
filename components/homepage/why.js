@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Checked from "../../public/img/homepage/checked.png";
+
 export default function Why() {
   const Content = [
     {
@@ -28,7 +31,7 @@ export default function Why() {
     { id: 6, description: "Adopter un mode de vie serein, sain et positif" },
   ];
   return (
-    <div className="bg-dta_pinklight">
+    <div className="bg-dta_pinklight text-dta_brown">
       <div className="px-6 pb-10 mt-4 max-w-7xl mx-auto lg:px-8">
         <p className="text-center font-apercu text-xl py-10">
           POURQUOI LA SOPHROLOGIE ET LES MÉDECINES DOUCES ?
@@ -36,19 +39,17 @@ export default function Why() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {Content.map((item) => (
             <div
-              className="flex items-center text-justify space-x-1"
+              className="flex items-center text-justify space-x-4"
               key={item.id}
             >
-              <div>
-                <svg
-                  width="24"
-                  height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                >
-                  <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm7 7.457l-9.005 9.565-4.995-5.865.761-.649 4.271 5.016 8.24-8.752.728.685z" />
-                </svg>
+              <div className="w-8 flex items-center text-justify">
+                <Image
+                  width={1000}
+                  height={1000}
+                  placeholder="blur"
+                  src={Checked}
+                  alt="Coché"
+                />
               </div>
               <p>{item.description}</p>
             </div>

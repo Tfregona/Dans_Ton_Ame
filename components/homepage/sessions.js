@@ -40,25 +40,23 @@ export default function Sessions() {
     },
   ];
   return (
-    <div>
-      <div className="p-6 my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
-        <p className="p-10 text-xl">LES SÉANCES</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {Content.map((item) => (
-            <div className="flex flex-col" key={item.id}>
-              <div className="mx-auto w-12">
-                <Image
-                  width={1000}
-                  height={1000}
-                  placeholder="blur"
-                  src={item.image}
-                  alt={item.name}
-                />
-              </div>
-              <p className="text-sm">{item.description}</p>
+    <div className="p-6 md:my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu text-dta_graydark">
+      <p className="p-4 md:p-10 text-xl">LES SÉANCES</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {Content.map((item) => (
+          <div className="flex flex-col" key={item.id}>
+            <div className="mx-auto w-12">
+              <Image
+                width={1000}
+                height={1000}
+                placeholder="blur"
+                src={item.image}
+                alt={item.name}
+              />
             </div>
-          ))}
-        </div>
+            <p className="text-sm">{item.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

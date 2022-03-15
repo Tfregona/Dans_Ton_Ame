@@ -24,21 +24,20 @@ export default function Values() {
   ];
 
   return (
-    <div className="bg-dta_pinklight">
-      <div className="p-6 my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
-        <p className="font-steinfeld">Mes valeurs</p>
+    <div className="bg-dta_pink text-white">
+      <div className="px-6 py-14 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
+        <p className="mb-8 font-steinfeld text-5xl">Mes valeurs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Content.map((item) => (
             <div className="flex flex-col" key={item.id}>
               <div className="mx-auto">
                 <svg
-                  width="24"
-                  height="24"
+                  className="w-12 h-12"
                   xmlns="http://www.w3.org/2000/svg"
-                  fillRule="evenodd"
-                  clipRule="evenodd"
+                  fill="currentColor"
+                  viewBox="0 0 30 30"
                 >
-                  <path d={item.image} />
+                  <path d={item.image}></path>
                 </svg>
               </div>
               <p>{item.title}</p>

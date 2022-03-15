@@ -36,8 +36,8 @@ export default function You() {
     },
   ];
   return (
-    <>
-      <p className="py-14 text-center font-steinfeld text-5xl">
+    <div className="text-dta_graydark">
+      <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
         La sophrologie et vous
       </p>
       <div className="px-6 max-w-7xl mx-auto lg:px-8">
@@ -53,7 +53,7 @@ export default function You() {
             />
           </div>
           <div>
-            <p className="p-10 text-center font-apercu text-xl">
+            <p className="p-4 md:p-10 text-center font-apercu text-xl">
               TRAVAILLER AVEC MOI C’EST ...
             </p>
             <div className="flex flex-col space-y-2">
@@ -64,6 +64,6 @@ export default function You() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

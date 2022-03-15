@@ -30,6 +30,12 @@ export default function SwiperComponent() {
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
+    {
+      name: "Femme sur son ordinateur",
+      src: "/img/swiper/swiper4.jpeg",
+      title: "titre",
+      description: "Lorem ipsum latum latum",
+    },
   ];
   return (
     <>
@@ -47,7 +53,6 @@ export default function SwiperComponent() {
         pagination={{
           clickable: true,
         }}
-        // effect={"fade"}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
@@ -62,10 +67,10 @@ export default function SwiperComponent() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="p-36"
+              className="lg:p-36"
             >
               <div className="p-20 bg-white/50 max-w-min">
-                <p className="whitespace-nowrap">Lorem etum latum</p>
+                <p className="whitespace-nowrap">Lorem etum latum him</p>
                 <p>{image.description}</p>
               </div>
             </div>
