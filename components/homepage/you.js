@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DesktopImage from "../../public/img/homepage/home1.jpeg";
+import React from "react";
 
 export default function You() {
   const Content = [
@@ -52,12 +53,12 @@ export default function You() {
             />
           </div>
           <div>
-            <p className="p-10 text-center font-apercu">
+            <p className="p-10 text-center font-apercu text-xl">
               TRAVAILLER AVEC MOI C’EST ...
             </p>
             <div className="flex flex-col space-y-2">
               {Content.map((item) => (
-                <p key={item.id} className="">○ {item.description}</p>
+                <p key={item.id}>○ {item.description}</p>
               ))}
             </div>
           </div>

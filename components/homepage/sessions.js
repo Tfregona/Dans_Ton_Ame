@@ -1,59 +1,52 @@
 import Image from "next/image";
-import Sessions1 from "../../public/img/homepage/sessions1.png"
-import Sessions2 from "../../public/img/homepage/sessions2.png"
-import Sessions3 from "../../public/img/homepage/sessions3.png"
-import Sessions4 from "../../public/img/homepage/sessions4.png"
-import Sessions5 from "../../public/img/homepage/sessions5.png"
-import Sessions6 from "../../public/img/homepage/sessions6.png"
+import Sessions1 from "../../public/img/homepage/sessions1.png";
+import Sessions2 from "../../public/img/homepage/sessions2.png";
+import Sessions3 from "../../public/img/homepage/sessions3.png";
+import Sessions4 from "../../public/img/homepage/sessions4.png";
+import Sessions5 from "../../public/img/homepage/sessions5.png";
+import Sessions6 from "../../public/img/homepage/sessions6.png";
 
 export default function Sessions() {
   const Content = [
     {
       id: 1,
       image: Sessions1,
-      description:
-        "SOPHROLOGIE",
+      description: "SOPHROLOGIE",
     },
     {
       id: 2,
       image: Sessions2,
-      description:
-        "MÉDITATION ET RELAXATION",
+      description: "MÉDITATION ET RELAXATION",
     },
     {
       id: 3,
       image: Sessions3,
-      description:
-        "COACHING",
+      description: "COACHING",
     },
     {
       id: 4,
       image: Sessions4,
-      description:
-        "YOGA NIDRA ET YOGA DU SOUFFLE",
+      description: "YOGA NIDRA ET YOGA DU SOUFFLE",
     },
     {
       id: 5,
       image: Sessions5,
-      description:
-        "LITHOTHÉRAPIE",
+      description: "LITHOTHÉRAPIE",
     },
     {
       id: 6,
       image: Sessions6,
-      description:
-        "AUDIOS ET FICHES PERSONNALISÉS",
+      description: "AUDIOS ET FICHES PERSONNALISÉS",
     },
   ];
   return (
-    <div className="bg-dta_pinklight">
+    <div>
       <div className="p-6 my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
-        <p className="">LES SÉANCES</p>
+        <p className="p-10 text-xl">LES SÉANCES</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Content.map((item) => (
             <div className="flex flex-col" key={item.id}>
-              <div className="mx-auto w-14">
-                {/* <img src={item.image} alt={item.description} /> */}
+              <div className="mx-auto w-12">
                 <Image
                   width={1000}
                   height={1000}
@@ -62,7 +55,7 @@ export default function Sessions() {
                   alt={item.name}
                 />
               </div>
-              <p>{item.description}</p>
+              <p className="text-sm">{item.description}</p>
             </div>
           ))}
         </div>

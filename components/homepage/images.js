@@ -10,7 +10,7 @@ export default function Images() {
     { source: Home4, name: "Groupe faisant du yoga" },
   ];
   return (
-    <div className="p-6 my-8 max-w-7xl mx-auto lg:px-8 grid grid-cols-3 gap-4">
+    <div className="py-6 lg:px-44 my-8 max-w-7xl mx-auto grid grid-cols-3 gap-4">
       {Images.map((image) => (
         <div
           className="rounded-t-full overflow-hidden flex items-center justify-center"
