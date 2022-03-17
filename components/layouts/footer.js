@@ -178,7 +178,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center p-6 bg-gray-200 rounded-bl-full">
+      <div className="text-center p-6 bg-gray-200">
         <p className="text-sm">
           © 2022{" "}
           <Link href="/">

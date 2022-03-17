@@ -6,6 +6,7 @@ const NavigationResponsive = [
   { name: "ACCUEIL", href: "/", current: false },
   { name: "À PROPOS", href: "/about", current: false },
   { name: "BLOG", href: "/blog", current: false },
+  { name: "CONTACT", href: "/contact", current: false },
   { name: "PRÉSTATIONS", href: "/services", current: false },
 ];
 
@@ -16,6 +17,7 @@ const NavigationLeft = [
 ];
 
 const NavigationRight = [
+  { name: "CONTACT", href: "/contact", current: false },
   { name: "PRÉSTATIONS", href: "/services", current: false },
 ];
 
@@ -51,7 +53,7 @@ export default function Navbar() {
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              : "text-[#846363] hover:bg-gray-700 hover:text-white",
                             "px-3 py-2 rounded-md font-epilogue font-bold"
                           )}
                           aria-current={item.current ? "page" : undefined}
@@ -83,7 +85,7 @@ export default function Navbar() {
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              : "text-[#846363] hover:bg-gray-700 hover:text-white",
                             "px-3 py-2 rounded-md font-epilogue font-bold"
                           )}
                           aria-current={item.current ? "page" : undefined}
@@ -106,7 +108,7 @@ export default function Navbar() {
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        : "text-[#846363] hover:bg-gray-700 hover:text-white",
                       "block px-3 py-2 rounded-md"
                     )}
                     aria-current={item.current ? "page" : undefined}

@@ -32,7 +32,7 @@ export default function Why() {
   ];
   return (
     <div className="bg-dta_brown text-dta_gray">
-      <div className="px-6 pb-10 mt-4 max-w-7xl mx-auto lg:px-8">
+      <div className="px-6 pb-10 max-w-7xl mx-auto lg:px-24">
         <p className="py-10 text-center font-apercu text-xl font-light">
           POURQUOI LA SOPHROLOGIE ET LES MÉDECINES DOUCES ?
         </p>
