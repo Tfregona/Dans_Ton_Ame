@@ -52,9 +52,9 @@ export default function Navbar() {
                         <button
                           className={classNames(
                             item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-[#846363] hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md font-epilogue font-bold"
+                              ? "text-white"
+                              : "text-[#846363] hover:text-white",
+                            "px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -85,8 +85,8 @@ export default function Navbar() {
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
-                              : "text-[#846363] hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md font-epilogue font-bold"
+                              : "text-[#846363] hover:text-white",
+                            "px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -108,8 +108,8 @@ export default function Navbar() {
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
-                        : "text-[#846363] hover:bg-gray-700 hover:text-white",
-                      "block px-3 py-2 rounded-md"
+                        : "text-[#846363] hover:text-white",
+                      "block px-3 py-2 font-bold font-epilogue"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >

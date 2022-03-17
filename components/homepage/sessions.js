@@ -45,8 +45,8 @@ export default function Sessions() {
       <p className="p-4 md:p-10 text-xl font-light">LES SÉANCES</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {Content.map((item) => (
-          <div className="flex flex-col" key={item.id}>
-            <div className="mx-auto w-12">
+          <div className="flex flex-col group" key={item.id}>
+            <div className="mx-auto w-12 transition ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
               <Image
                 width={1000}
                 height={1000}

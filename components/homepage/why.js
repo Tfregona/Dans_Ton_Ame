@@ -39,10 +39,10 @@ export default function Why() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {Content.map((item) => (
             <div
-              className="flex items-center text-justify space-x-4"
+              className="flex items-center text-justify space-x-4 group"
               key={item.id}
             >
-              <div className="w-7 flex items-center text-justify">
+              <div className="w-7 flex items-center text-justify transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300">
                 <Image
                   width={1000}
                   height={1000}

@@ -29,8 +29,8 @@ export default function Values() {
         <p className="mb-8 font-steinfeld text-5xl">Mes valeurs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Content.map((item) => (
-            <div className="flex flex-col" key={item.id}>
-              <div className="mx-auto">
+            <div className="flex flex-col group" key={item.id}>
+              <div className="mx-auto ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
                 <svg
                   className="w-12 h-12"
                   xmlns="http://www.w3.org/2000/svg"

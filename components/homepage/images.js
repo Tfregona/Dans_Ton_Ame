@@ -26,7 +26,7 @@ export default function Images() {
                 alt={image.name}
               />
             </div>
-            <div className="h-16 w-16 -mb-6 absolute self-end flex items-center justify-center rounded-full bg-dta_graylight">
+            <div className="h-16 w-16 -mb-4 absolute self-end flex items-center justify-center rounded-full bg-dta_graylight">
               <div className="h-4 w-4 rounded-full bg-dta_pink"></div>
             </div>
           </div>
