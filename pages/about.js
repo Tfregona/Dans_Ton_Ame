@@ -41,7 +41,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-3 lg:min-h-[100vh]">
+      <div className="lg:grid lg:grid-cols-3 lg:min-h-[150vh]">
         <div className="hidden lg:block">
           <div className="w-[25vw] border-4 border-dta_gray">
             <Image
