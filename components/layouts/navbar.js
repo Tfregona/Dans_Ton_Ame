@@ -1,31 +1,66 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-
-const NavigationResponsive = [
-  { name: "ACCUEIL", href: "/", current: false },
-  { name: "À PROPOS", href: "/about", current: false },
-  { name: "BLOG", href: "/blog", current: false },
-  { name: "CONTACT", href: "/contact", current: false },
-  { name: "PRÉSTATIONS", href: "/services", current: false },
-];
-
-const NavigationLeft = [
-  { name: "ACCUEIL", href: "/", current: false },
-  { name: "À PROPOS", href: "/about", current: false },
-  { name: "BLOG", href: "/blog", current: false },
-];
-
-const NavigationRight = [
-  { name: "CONTACT", href: "/contact", current: false },
-  { name: "PRÉSTATIONS", href: "/services", current: false },
-];
+import { useRouter } from "next/router";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const router = useRouter();
+  const currentPage = router.pathname;
+
+  const NavigationResponsive = [
+    { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
+    {
+      name: "À PROPOS",
+      href: "/about",
+      current: currentPage === "/about" ? true : false,
+    },
+    {
+      name: "BLOG",
+      href: "/blog",
+      current: currentPage === "/blog" ? true : false,
+    },
+    {
+      name: "CONTACT",
+      href: "/contact",
+      current: currentPage === "/contact" ? true : false,
+    },
+    {
+      name: "PRÉSTATIONS",
+      href: "/services",
+      current: currentPage === "/services" ? true : false,
+    },
+  ];
+
+  const NavigationLeft = [
+    { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
+    {
+      name: "À PROPOS",
+      href: "/about",
+      current: currentPage === "/about" ? true : false,
+    },
+    {
+      name: "BLOG",
+      href: "/blog",
+      current: currentPage === "/blog" ? true : false,
+    },
+  ];
+
+  const NavigationRight = [
+    {
+      name: "CONTACT",
+      href: "/contact",
+      current: currentPage === "/contact" ? true : false,
+    },
+    {
+      name: "PRÉSTATIONS",
+      href: "/services",
+      current: currentPage === "/services" ? true : false,
+    },
+  ];
   return (
     <Disclosure as="nav" className="bg-dta_graylight">
       {({ open }) => (
@@ -84,7 +119,7 @@ export default function Navbar() {
                         <button
                           className={classNames(
                             item.current
-                              ? "bg-gray-900 text-white"
+                              ? "text-white"
                               : "text-[#846363] hover:text-white",
                             "px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12"
                           )}
@@ -107,7 +142,7 @@ export default function Navbar() {
                   <button
                     className={classNames(
                       item.current
-                        ? "bg-gray-900 text-white"
+                        ? " text-white"
                         : "text-[#846363] hover:text-white",
                       "block px-3 py-2 font-bold font-epilogue"
                     )}
