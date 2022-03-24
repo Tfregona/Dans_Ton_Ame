@@ -33,7 +33,7 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between">
               {/* Icons for responsive */}
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -44,8 +44,8 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               {/* Left size */}
-              <div className="flex-1 flex items-center justify-center sm:items-stretch">
-                <div className="hidden sm:block sm:ml-6">
+              <div className="flex-1 flex items-center justify-center md:items-stretch">
+                <div className="hidden md:block md:ml-6">
                   <div className="flex space-x-4">
                     {NavigationLeft.map((item) => (
                       <Link key={item.name} href={item.href}>
@@ -76,8 +76,8 @@ export default function Navbar() {
                 </Link>
               </div>
               {/* Right size */}
-              <div className="flex-1 flex items-center justify-center sm:items-stretch">
-                <div className="hidden sm:block sm:ml-6">
+              <div className="flex-1 flex items-center justify-center md:items-stretch">
+                <div className="hidden md:block md:ml-6">
                   <div className="flex space-x-4">
                     {NavigationRight.map((item) => (
                       <Link key={item.name} href={item.href}>
@@ -100,7 +100,7 @@ export default function Navbar() {
             </div>
           </div>
           {/* Pannel for responsive */}
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {NavigationResponsive.map((item) => (
                 <Link key={item.name} href={item.href}>

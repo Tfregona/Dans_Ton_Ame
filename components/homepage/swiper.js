@@ -69,7 +69,7 @@ export default function SwiperComponent() {
               }}
               className="lg:p-36"
             >
-              <div className="p-20 bg-white/50 max-w-min">
+              <div className="p-20 bg-white/50 w-[100vw] md:max-w-min">
                 <p className="whitespace-nowrap">Lorem etum latum him</p>
                 <p>{image.description}</p>
               </div>
