@@ -14,9 +14,14 @@ export default function Navbar() {
   const NavigationResponsive = [
     { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
     {
-      name: "À PROPOS",
-      href: "/about",
-      current: currentPage === "/about" ? true : false,
+      name: "SOPHROLOGIE",
+      href: "/sophrology",
+      current: currentPage === "/sophrology" ? true : false,
+    },
+    {
+      name: "PRÉSTATIONS",
+      href: "/services",
+      current: currentPage === "/services" ? true : false,
     },
     {
       name: "BLOG",
@@ -24,41 +29,46 @@ export default function Navbar() {
       current: currentPage === "/blog" ? true : false,
     },
     {
+      name: "À PROPOS",
+      href: "/about",
+      current: currentPage === "/about" ? true : false,
+    },
+    {
       name: "CONTACT",
       href: "/contact",
       current: currentPage === "/contact" ? true : false,
-    },
-    {
-      name: "PRÉSTATIONS",
-      href: "/services",
-      current: currentPage === "/services" ? true : false,
     },
   ];
 
   const NavigationLeft = [
     { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
     {
-      name: "À PROPOS",
-      href: "/about",
-      current: currentPage === "/about" ? true : false,
-    },
-    {
-      name: "BLOG",
-      href: "/blog",
-      current: currentPage === "/blog" ? true : false,
-    },
-  ];
-
-  const NavigationRight = [
-    {
-      name: "CONTACT",
-      href: "/contact",
-      current: currentPage === "/contact" ? true : false,
+      name: "SOPHROLOGIE",
+      href: "/sophrology",
+      current: currentPage === "/sophrology" ? true : false,
     },
     {
       name: "PRÉSTATIONS",
       href: "/services",
       current: currentPage === "/services" ? true : false,
+    },
+  ];
+
+  const NavigationRight = [
+    {
+      name: "BLOG",
+      href: "/blog",
+      current: currentPage === "/blog" ? true : false,
+    },
+    {
+      name: "À PROPOS",
+      href: "/about",
+      current: currentPage === "/about" ? true : false,
+    },
+    {
+      name: "CONTACT",
+      href: "/contact",
+      current: currentPage === "/contact" ? true : false,
     },
   ];
   return (

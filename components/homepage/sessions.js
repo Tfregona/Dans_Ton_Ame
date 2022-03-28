@@ -42,15 +42,20 @@ export default function Sessions() {
   return (
     <div className="p-6 md:my-8 max-w-7xl mx-auto lg:px-8 text-center font-apercu text-dta_graydark">
       <div className="h-[0.1rem] w-44 mx-auto bg-dta_graydark"></div>
-      <p className="p-4 md:p-10 text-xl font-light">LES SÉANCES</p>
+      <p className="p-4 md:p-10 text-xl font-light">
+        RETROUVEZ D’AUTRES PRESTATIONS :
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {Content.map((item) => (
           <div className="flex flex-col group" key={item.id}>
             <div className="mx-auto w-12 transition ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
               <Image
-                width={1000}
-                height={1000}
-                placeholder="blur"
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center top"
+                quality={30}
                 src={item.image}
                 alt={item.name}
               />

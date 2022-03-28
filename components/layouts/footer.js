@@ -17,23 +17,24 @@ export default function Footer() {
   return (
     <footer className="text-center lg:text-left text-gray-600">
       <div className="bg-gray-100">
-        <div className="p-6 max-w-7xl mx-auto lg:px-8 flex justify-center items-center lg:justify-between border-b border-gray-300">
-          <div>
-            <p className="text-xl lg:absolute z-10 text-black font-steinfeld">
-              Get connected with us on social networks:
-            </p>
-            <div className="hidden lg:grid grid-cols-5 gap-4 mt-4">
-              {Images.map((image) => (
-                <Image
-                  width={1000}
-                  height={1000}
-                  placeholder="blur"
-                  key={image.name}
-                  src={image.source}
-                  alt={image.name}
-                />
-              ))}
-            </div>
+        <div className="p-6 max-w-7xl mx-auto lg:px-8 border-b border-gray-300">
+          <p className="text-xl lg:absolute z-10 text-black font-steinfeld">
+            Get connected with us on social networks:
+          </p>
+          <div className="hidden lg:grid lg:grid-cols-5 lg:gap-4 mt-4">
+            {Images.map((image) => (
+              <Image
+                key={image.name}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center top"
+                quality={30}
+                src={image.source}
+                alt={image.name}
+              />
+            ))}
           </div>
         </div>
         <div className="p-6 max-w-7xl mx-auto lg:px-8 text-center md:text-left">

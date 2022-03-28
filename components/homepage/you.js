@@ -37,9 +37,6 @@ export default function You() {
   ];
   return (
     <div className="text-dta_graydark">
-      <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
-        La sophrologie et vous
-      </p>
       <div className="px-6 max-w-7xl mx-auto lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="hidden lg:block pl-44 pr-10">
@@ -61,9 +58,7 @@ export default function You() {
                 <p key={item.id}>○ {item.description}</p>
               ))}
             </div>
-            <p className="my-4 text-xl text-center">
-              JE PRENDS RENDEZ-VOUS
-            </p>
+            <p className="my-4 text-xl text-center">JE PRENDS RENDEZ-VOUS</p>
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="md:pr-6 text-center md:text-right">
                 <a

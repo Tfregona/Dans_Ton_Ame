@@ -42,11 +42,14 @@ export default function Why() {
               className="flex items-center text-justify space-x-4 group"
               key={item.id}
             >
-              <div className="w-7 flex items-center text-justify transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300">
+              <div className="w-7 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300">
                 <Image
-                  width={1000}
-                  height={1000}
-                  placeholder="blur"
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="cover"
+                  objectPosition="center top"
+                  quality={30}
                   src={Checked}
                   alt="Coché"
                 />
