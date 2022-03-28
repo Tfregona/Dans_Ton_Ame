@@ -61,7 +61,7 @@ export default function Services() {
               src={service.image}
               alt={service.title}
               width="100%"
-              height="100%"
+              height="70%"
               layout="responsive"
               objectFit="cover"
               objectPosition="center top"

@@ -17,11 +17,14 @@ export default function Images() {
             className="rounded-t-full overflow-hidden flex items-center justify-center"
             key={image.name}
           >
-            <div className="block">
+            <div className="w-full">
               <Image
-                width={1000}
-                height={1500}
-                placeholder="blur"
+                width="60%"
+                height="100%"
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center top"
+                quality={30}
                 src={image.source}
                 alt={image.name}
               />

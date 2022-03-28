@@ -40,14 +40,18 @@ export default function You() {
       <div className="px-6 max-w-7xl mx-auto lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="hidden lg:block pl-44 pr-10">
-            <Image
-              width={1000}
-              height={1500}
-              layout="responsive"
-              placeholder="blur"
-              src={DesktopImage}
-              alt="Desktop"
-            />
+            <div className="w-full">
+              <Image
+                src={DesktopImage}
+                alt="Desktop"
+                width="80%"
+                height="110%"
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="center top"
+                quality={30}
+              />
+            </div>
           </div>
           <div>
             <p className="p-4 md:p-10 text-center font-apercu text-xl font-light">
@@ -55,7 +59,9 @@ export default function You() {
             </p>
             <div className="mb-14 flex flex-col space-y-2">
               {Content.map((item) => (
-                <p key={item.id}>○ {item.description}</p>
+                <p key={item.id} className="text-center lg:text-left">
+                  ○ {item.description}
+                </p>
               ))}
             </div>
             <p className="my-4 text-xl text-center">JE PRENDS RENDEZ-VOUS</p>

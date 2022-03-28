@@ -50,14 +50,15 @@ export default function Sessions() {
           <div className="flex flex-col group" key={item.id}>
             <div className="mx-auto w-12 transition ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
               <Image
+                src={item.image}
+                alt={item.name}
                 width="100%"
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center top"
                 quality={30}
-                src={item.image}
-                alt={item.name}
+                loading="lazy"
               />
             </div>
             <p className="text-sm">{item.description}</p>

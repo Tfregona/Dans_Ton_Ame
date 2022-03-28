@@ -24,6 +24,8 @@ export default function Footer() {
           <div className="hidden lg:grid lg:grid-cols-5 lg:gap-4 mt-4">
             {Images.map((image) => (
               <Image
+                src={image.source}
+                alt={image.name}
                 key={image.name}
                 width="100%"
                 height="100%"
@@ -31,8 +33,7 @@ export default function Footer() {
                 objectFit="cover"
                 objectPosition="center top"
                 quality={30}
-                src={image.source}
-                alt={image.name}
+                loading="lazy"
               />
             ))}
           </div>
