@@ -8,12 +8,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Dans ton âme</title>
-        <meta name="description" content="Dans ton âme, sophrologie en Haute Savoie" />
+        <meta
+          name="description"
+          content="Dans ton âme, sophrologie en Haute Savoie"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Component {...pageProps} />
-      {/* <div className="min-h-screen bg-gray-500"></div> */}
+      <div className="bg-dta_graylight">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </>
   );

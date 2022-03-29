@@ -9,7 +9,7 @@ import Contact from "../components/homepage/contact";
 
 export default function Home() {
   return (
-    <div className="bg-dta_graylight">
+    <>
       {/* Landing */}
       <Landing />
       {/* Why */}
@@ -26,6 +26,6 @@ export default function Home() {
       <Values />
       {/* Contact */}
       <Contact />
-    </div>
+    </>
   );
 }

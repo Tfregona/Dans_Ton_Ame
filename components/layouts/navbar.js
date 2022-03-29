@@ -19,7 +19,7 @@ export default function Navbar() {
       current: currentPage === "/sophrology" ? true : false,
     },
     {
-      name: "PRÉSTATIONS",
+      name: "PRESTATIONS",
       href: "/services",
       current: currentPage === "/services" ? true : false,
     },
@@ -48,7 +48,7 @@ export default function Navbar() {
       current: currentPage === "/sophrology" ? true : false,
     },
     {
-      name: "PRÉSTATIONS",
+      name: "PRESTATIONS",
       href: "/services",
       current: currentPage === "/services" ? true : false,
     },

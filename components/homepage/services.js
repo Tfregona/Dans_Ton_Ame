@@ -34,7 +34,7 @@ export default function Services() {
       id: 5,
       title: "TRAITEMENT MÉDICAUX ET PATHOLOGIES",
       description:
-        "La sophrologie vous aide à mieux vivre certaines maladies comme la fibromyalgie ou le cancer. Elle sert également d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien. Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter ces maladies et pathologies avec énergie et…",
+        "La sophrologie sert d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien. Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter ces maladies et pathologies avec énergie et…",
       image: "/img/homepage/services5.jpeg",
     },
     {
@@ -54,7 +54,7 @@ export default function Services() {
         {Services.map((service) => (
           <div
             key={service.id}
-            className="p-3 text-dta_brown text-center border-2 border-dta_brown"
+            className="p-3 text-center border-2 border-dta_graydark"
           >
             <Image
               src={service.image}
@@ -67,8 +67,8 @@ export default function Services() {
               quality={30}
               priority={true}
             />
-            <p className="text-2xl my-4">{service.title}</p>
-            <p className="">{service.description}</p>
+            <p className="text-xl font-apercu font-light mt-4 mb-2 underline decoration-1 underline-offset-4">{service.title}</p>
+            <p>{service.description}</p>
           </div>
         ))}
       </div>
