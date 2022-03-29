@@ -9,7 +9,7 @@ export default function About() {
           <div className="py-5">
             <h1 className="mb-2 text-5xl font-steinfeld">A Propos de moi</h1>
             <p className="mb-2 text-2xl font-apercu">
-              JE M’APELLE ALICIA, J’AI 23 ANS
+              JE M’APPELLE ALICIA, J’AI 23 ANS
             </p>
             <p className="indent-8 text-justify">
               Fibromyalgique et atteinte d’acouphènes depuis quelques années, la
@@ -28,12 +28,14 @@ export default function About() {
             </p>
           </div>
           <div className="hidden lg:flex lg:justify-center">
-            <div className="w-[20vw] 2xl:w-[15vw] mt-52 absolute border-4 border-dta_gray">
+            <div className="w-[20vw] mt-52 absolute border-4 border-dta_gray">
               <Image
-                width={1000}
-                height={1500}
-                placeholder="blur"
+                width="100%"
+                height="150%"
                 layout="responsive"
+                objectFit="cover"
+                objectPosition="center top"
+                quality={30}
                 src={About1}
                 alt="About 1"
               />
@@ -41,24 +43,28 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-3 lg:min-h-[150vh]">
-        <div className="hidden lg:block">
-          <div className="w-[25vw] border-4 border-dta_gray">
+      <div className="lg:grid lg:grid-cols-3 lg:min-h-[100vh]">
+        <div className="px-14 hidden lg:block">
+          <div className="border-4 border-dta_gray">
             <Image
-              width={1000}
-              height={1500}
-              placeholder="blur"
+              width="100%"
+              height="120%"
               layout="responsive"
+              objectFit="cover"
+              objectPosition="center top"
+              quality={30}
               src={About1}
               alt="About 1"
             />
           </div>
-          <div className="w-[20vw] absolute ml-24 -mt-32 border-4 border-dta_gray">
+          <div className="w-[10em] xl:w-[20em] absolute ml-44 -mt-44 border-4 border-dta_gray">
             <Image
-              width={1000}
-              height={1500}
-              placeholder="blur"
+              width="100%"
+              height="120%"
               layout="responsive"
+              objectFit="cover"
+              objectPosition="center top"
+              quality={30}
               src={About1}
               alt="About 1"
             />

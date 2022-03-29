@@ -13,24 +13,28 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 export default function SwiperComponent() {
   const Images = [
     {
+      id: 1,
       name: "Méditation",
       src: "/img/swiper/swiper1.jpg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
     {
+      id: 2,
       name: "Bol tibétain",
       src: "/img/swiper/swiper2.jpg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
     {
+      id: 3,
       name: "Cristaux",
       src: "/img/swiper/swiper3.jpg",
       title: "titre",
       description: "Lorem ipsum latum latum",
     },
     {
+      id: 4,
       name: "Femme sur son ordinateur",
       src: "/img/swiper/swiper4.jpg",
       title: "titre",
@@ -60,7 +64,7 @@ export default function SwiperComponent() {
         {Images.map((image) => (
           <SwiperSlide key={image.name}>
             <div
-              key={image.name}
+              key={image.id}
               style={{
                 backgroundImage: `url(${image.src})`,
                 backgroundRepeat: "no-repeat",

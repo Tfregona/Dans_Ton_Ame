@@ -5,9 +5,9 @@ import Home4 from "../../public/img/homepage/home4.jpeg";
 
 export default function Images() {
   const Images = [
-    { source: Home2, name: "Femme faisant du yoga" },
-    { source: Home3, name: "Encens qui brûle" },
-    { source: Home4, name: "Groupe faisant du yoga" },
+    { id: 1, src: Home2, name: "Femme faisant du yoga" },
+    { id: 2, src: Home3, name: "Encens qui brûle" },
+    { id: 3, src: Home4, name: "Groupe faisant du yoga" },
   ];
   return (
     <>
@@ -25,7 +25,7 @@ export default function Images() {
                 objectFit="cover"
                 objectPosition="center top"
                 quality={30}
-                src={image.source}
+                src={image.src}
                 alt={image.name}
               />
             </div>

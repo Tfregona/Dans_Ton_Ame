@@ -1,5 +1,4 @@
 import Image from "next/image";
-import DesktopImage from "../../public/img/swiper/swiper1.jpg";
 
 export default function Services() {
   const Services = [
@@ -66,7 +65,7 @@ export default function Services() {
               objectFit="cover"
               objectPosition="center top"
               quality={30}
-              priority
+              priority={true}
             />
             <p className="text-2xl my-4">{service.title}</p>
             <p className="">{service.description}</p>
