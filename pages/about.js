@@ -6,9 +6,9 @@ export default function About() {
     <div>
       <div className="bg-dta_brown">
         <div className="p-6 mb-24 xl:px-44 max-w-7xl mx-auto lg:grid lg:grid-cols-2">
-          <div className="py-5">
-            <h1 className="mb-2 text-5xl font-steinfeld">A Propos de moi</h1>
-            <p className="mb-2 text-2xl font-apercu">
+          <div className="py-5 text-dta_gray">
+            <h1 className="mb-4 text-5xl font-steinfeld">A Propos de moi</h1>
+            <p className="mb-2 text-xl font-light font-apercu">
               JE M’APPELLE ALICIA, J’AI 23 ANS
             </p>
             <p className="indent-8 text-justify">
@@ -70,9 +70,9 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="text-center lg:text-left p-6 lg:px-24 col-span-2 flex items-center justify-center lg:justify-start">
+        <div className="text-center text-dta_graydark lg:text-left p-6 lg:px-24 col-span-2 flex items-center justify-center lg:justify-start">
           <div>
-            <p className="text-2xl font-apercu">MES FORMATIONS</p>
+            <p className="text-xl font-light font-apercu">MES FORMATIONS</p>
             <ul>
               <li>Licence Information & Communication</li>
               <li>École française de lithothérapie</li>

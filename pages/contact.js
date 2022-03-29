@@ -17,7 +17,7 @@ export default function Contact() {
             className="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-white text-dta_brown inline-block"
           >
             <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-dta_pinklight group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-dta_pink flex">
+            <span className="relative group-hover:text-dta_pink flex flex-row">
               Mon Instagram
               <svg
                 className="ml-1 w-4"
