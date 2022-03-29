@@ -32,7 +32,7 @@ export default function Footer() {
                 layout="responsive"
                 objectFit="cover"
                 objectPosition="center top"
-                quality={30}
+                quality={20}
                 loading="lazy"
               />
             ))}
