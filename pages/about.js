@@ -17,7 +17,7 @@ export default function About() {
               de nombreuses années de galère avec médicaments et traitements, je
               me suis finalement tournée vers la spiritualité à l’âge de 17 ans
               afin de trouver une réponse à mes douleurs physiques,
-              émotionnelles, ou bien pscyhologiques. Le parcours a été long et
+              émotionnelles, ou bien psychique. Le parcours a été long et
               je peux être fière de dire que sophrologie, magnétisme, ou encore
               naturopathie m’ont sauvé. Attention, je ne dis pas que les
               traitements ne fonctionnent pas. Je pense simplement que nous

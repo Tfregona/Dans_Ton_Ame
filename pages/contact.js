@@ -1,36 +1,96 @@
+import Image from 'next/image'
+import About1 from '../public/img/decoration/contact.jpg'
+
 export default function Contact() {
   return (
-    <div>
-      <div className="p-10 lg:px-40 xl:px-60 bg-dta_pink text-center grid place-items-center h-screen">
-        <div className="p-3 border-dashed border-2 border-dta_brown rounded">
-          <p className="text-md mb-3">
-            🌻 Cette page est en cours de développement... 🌻
-          </p>
-          <p className="text-xl mb-3">
-            En attendant, vous pouvez me suivre sur Instagram, je poste
-            régulièrement !
-          </p>
-          <a
-            href="https://instagram.com/dans.ton.ame"
-            target="_blank"
-            rel="noreferrer"
-            className="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-white text-dta_brown inline-block"
+    <div className="bg-dta_pink grid grid-cols-1 md:grid-cols-2">
+      <div className="flex items-center justify-center">
+        <form className="w-full max-w-lg">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Nom
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="text"
+                placeholder="Votre nom"
+              />
+            </div>
+            <div className="w-full md:w-1/2 px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Prénom
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Votre prénom"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Email
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="email"
+                placeholder="Votre adresse mail valide"
+              />
+            </div>
+            <div className="w-full md:w-1/2 px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Téléphone
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Votre numéro de téléphone"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Description
+              </label>
+              <p class="text-gray-600 text-xs italic">
+                Make it as long and as crazy as you'd like
+              </p>
+              <textarea
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-password"
+                type="text"
+                placeholder="Entrez ici"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            className="rounded border-2 overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 bg-dta_pink text-white"
           >
-            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-dta_pinklight group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-dta_pink flex flex-row">
-              Mon Instagram
-              <svg
-                className="ml-1 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </span>
-          </a>
+            <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"></span>
+            <span className="relative">Envoyer</span>
+          </button>
+        </form>
+      </div>
+      <div>
+        <div className="ml-auto w-1/2">
+          <Image
+            src={About1}
+            alt="{image.name}"
+            width="100%"
+            height="150%"
+            layout="responsive"
+            objectFit="cover"
+            objectPosition="center top"
+            quality={20}
+          />
         </div>
       </div>
     </div>
