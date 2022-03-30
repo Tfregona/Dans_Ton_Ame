@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="bg-dta_graylight">
+      <div className="bg-dta_graylight text-dta_graydark">
         <Component {...pageProps} />
       </div>
       <Footer />

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import About1 from '../public/img/homepage/home4.jpeg'
+import About1 from '../public/img/homepage/home1.jpeg'
 
 export default function About() {
   return (
@@ -70,7 +70,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="text-center text-dta_graydark lg:text-left p-6 lg:px-24 col-span-2 flex items-center justify-center lg:justify-start">
+        <div className="text-center lg:text-left p-6 lg:px-24 col-span-2 flex items-center justify-center lg:justify-start">
           <div>
             <p className="text-xl font-light font-apercu">MES FORMATIONS</p>
             <ul>

@@ -47,7 +47,7 @@ export default function Cards() {
   ]
 
   return (
-    <div className="text-dta_graydark">
+    <div>
       <p
         id="services"
         className="py-8 md:py-14 text-center font-steinfeld text-5xl"

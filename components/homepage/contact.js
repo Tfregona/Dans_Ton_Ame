@@ -14,7 +14,7 @@ export default function Conact() {
     }
   ]
   return (
-    <div className="px-6 py-20 max-w-7xl mx-auto lg:px-8 text-center text-dta_graydark">
+    <div className="px-6 py-20 max-w-7xl mx-auto lg:px-8 text-center">
       <p className="mb-4 text-xl">SUIVRE L'ACTUALITÉ</p>
       <div className="flex items-center justify-center space-x-6">
         {Socials.map((item) => (

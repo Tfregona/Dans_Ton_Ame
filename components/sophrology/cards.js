@@ -46,7 +46,7 @@ export default function Services() {
   ]
 
   return (
-    <div className="text-dta_graydark">
+    <div>
       <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
         La sophrologie et vous
       </p>
