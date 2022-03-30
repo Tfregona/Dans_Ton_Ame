@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="px-6 pb-10 max-w-7xl mx-auto lg:px-8">
+    <div className="px-6 pb-16 max-w-7xl mx-auto lg:px-8">
       <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
         L'histoire de la sophrologie
       </p>
@@ -27,7 +27,7 @@ export default function About() {
           inclusion dans des applications de mise en page de texte, comme Aldus
           PageMaker.
         </p>
-        <p className="md:pl-8 md:border-l-2 md:border-dta_brown">
+        <p className="md:pl-8 md:border-l-2 md:border-dta_graydark">
           Le Lorem Ipsum est simplement du faux texte employé dans la
           composition et la mise en page avant impression. Le Lorem Ipsum est le
           faux texte standard de l'imprimerie depuis les années 1500, quand un

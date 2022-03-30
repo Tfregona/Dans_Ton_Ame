@@ -36,7 +36,7 @@ export default function You() {
     }
   ]
   return (
-    <div className="px-6 max-w-7xl mx-auto lg:px-8 grid grid-cols-1 lg:grid-cols-2">
+    <div className="px-6 pb-16 max-w-7xl mx-auto lg:px-8 grid grid-cols-1 lg:grid-cols-2">
       <div className="hidden lg:flex items-center pl-44 pr-10">
         <div className="w-full">
           <Image

@@ -41,8 +41,8 @@ export default function Sessions() {
     }
   ]
   return (
-    <div className="px-6 pb-10 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
-      <p className="p-4 md:p-10 text-xl font-light">
+    <div className="px-6 pb-16 max-w-7xl mx-auto lg:px-8 text-center font-apercu">
+      <p className="pb-4 md:pb-10 text-xl font-light">
         RETROUVEZ D’AUTRES PRESTATIONS :
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
