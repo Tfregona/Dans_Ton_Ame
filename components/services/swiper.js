@@ -1,56 +1,56 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import { Autoplay, Pagination, Navigation } from 'swiper'
 
 export default function SwiperComponent() {
   const Images = [
     {
       id: 1,
-      name: "Méditation",
-      src: "/img/swiper/swiper1.jpg",
-      title: "titre",
-      description: "Lorem ipsum latum latum",
+      name: 'Méditation',
+      src: '/img/swiper/swiper1.jpg',
+      title: 'titre',
+      description: 'Lorem ipsum latum latum'
     },
     {
       id: 2,
-      name: "Bol tibétain",
-      src: "/img/swiper/swiper2.jpg",
-      title: "titre",
-      description: "Lorem ipsum latum latum",
+      name: 'Bol tibétain',
+      src: '/img/swiper/swiper2.jpg',
+      title: 'titre',
+      description: 'Lorem ipsum latum latum'
     },
     {
       id: 3,
-      name: "Cristaux",
-      src: "/img/swiper/swiper3.jpg",
-      title: "titre",
-      description: "Lorem ipsum latum latum",
+      name: 'Cristaux',
+      src: '/img/swiper/swiper3.jpg',
+      title: 'titre',
+      description: 'Lorem ipsum latum latum'
     },
     {
       id: 4,
-      name: "Femme sur son ordinateur",
-      src: "/img/swiper/swiper4.jpg",
-      title: "titre",
-      description: "Lorem ipsum latum latum",
-    },
-  ];
+      name: 'Femme sur son ordinateur',
+      src: '/img/swiper/swiper4.jpg',
+      title: 'titre',
+      description: 'Lorem ipsum latum latum'
+    }
+  ]
   return (
     <>
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff'
         }}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 10000,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         }}
         pagination={{
-          clickable: true,
+          clickable: true
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
@@ -62,9 +62,9 @@ export default function SwiperComponent() {
               key={image.id}
               style={{
                 backgroundImage: `url(${image.src})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
               }}
               className="lg:p-36"
             >
@@ -77,5 +77,5 @@ export default function SwiperComponent() {
         ))}
       </Swiper>
     </>
-  );
+  )
 }

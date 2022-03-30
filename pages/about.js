@@ -1,5 +1,5 @@
-import Image from "next/image";
-import About1 from "../public/img/homepage/home4.jpeg";
+import Image from 'next/image'
+import About1 from '../public/img/homepage/home4.jpeg'
 
 export default function About() {
   return (
@@ -83,5 +83,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }

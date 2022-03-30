@@ -1,19 +1,19 @@
-import Link from "next/link";
-import Image from "next/image";
-import Footer1 from "../../public/img/footer/footer1.jpeg";
-import Footer2 from "../../public/img/footer/footer2.jpeg";
-import Footer3 from "../../public/img/footer/footer3.jpeg";
-import Footer4 from "../../public/img/footer/footer4.jpeg";
-import Footer5 from "../../public/img/footer/footer5.jpeg";
+import Link from 'next/link'
+import Image from 'next/image'
+import Footer1 from '../../public/img/footer/footer1.jpeg'
+import Footer2 from '../../public/img/footer/footer2.jpeg'
+import Footer3 from '../../public/img/footer/footer3.jpeg'
+import Footer4 from '../../public/img/footer/footer4.jpeg'
+import Footer5 from '../../public/img/footer/footer5.jpeg'
 
 export default function Footer() {
   const Images = [
-    { name: "Livre", source: Footer1 },
-    { name: "Méditation", source: Footer2 },
-    { name: "Yoga", source: Footer3 },
-    { name: "Sauge", source: Footer4 },
-    { name: "Cristal", source: Footer5 },
-  ];
+    { name: 'Livre', source: Footer1 },
+    { name: 'Méditation', source: Footer2 },
+    { name: 'Yoga', source: Footer3 },
+    { name: 'Sauge', source: Footer4 },
+    { name: 'Cristal', source: Footer5 }
+  ]
   return (
     <footer className="text-center lg:text-left text-gray-600">
       <div className="bg-gray-100">
@@ -182,7 +182,7 @@ export default function Footer() {
       </div>
       <div className="text-center p-6 bg-gray-200">
         <p className="text-sm">
-          © 2022{" "}
+          © 2022{' '}
           <Link href="/">
             <button className="text-gray-600 font-semibold">
               Dans ton âme
@@ -190,7 +190,7 @@ export default function Footer() {
           </Link>
         </p>
         <p>
-          🍃 Site réalisé par{" "}
+          🍃 Site réalisé par{' '}
           <a
             href="https://fregonatristan.herokuapp.com"
             target="_blank"
@@ -202,5 +202,5 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  );
+  )
 }

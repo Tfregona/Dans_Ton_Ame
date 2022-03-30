@@ -1,5 +1,5 @@
-import Images from "../components/sophrology/images";
-import ServicesCards from "../components/sophrology/cards";
+import Images from '../components/sophrology/images'
+import ServicesCards from '../components/sophrology/cards'
 
 export default function Sophrology() {
   return (
@@ -9,5 +9,5 @@ export default function Sophrology() {
       {/* Images */}
       <Images />
     </div>
-  );
+  )
 }

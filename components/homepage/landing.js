@@ -4,10 +4,10 @@ export default function Landig() {
       className="w-full text-center p-10"
       style={{
         backgroundImage: `url(/img/swiper/swiper2.jpg)`,
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }}
     >
       <div className="p-5">
@@ -15,5 +15,5 @@ export default function Landig() {
         <h2 className="text-xl font-bold">Sophrologue</h2>
       </div>
     </div>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import Head from "next/head";
-import "../styles/globals.css";
-import Navbar from "../components/layouts/navbar";
-import Footer from "../components/layouts/footer";
+import Head from 'next/head'
+import '../styles/globals.css'
+import Navbar from '../components/layouts/navbar'
+import Footer from '../components/layouts/footer'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       </div>
       <Footer />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

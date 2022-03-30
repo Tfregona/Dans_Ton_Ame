@@ -1,76 +1,76 @@
-import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
-  const router = useRouter();
-  const currentPage = router.pathname;
+  const router = useRouter()
+  const currentPage = router.pathname
 
   const NavigationResponsive = [
-    { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
+    { name: 'ACCUEIL', href: '/', current: currentPage === '/' ? true : false },
     {
-      name: "SOPHROLOGIE",
-      href: "/sophrology",
-      current: currentPage === "/sophrology" ? true : false,
+      name: 'SOPHROLOGIE',
+      href: '/sophrology',
+      current: currentPage === '/sophrology' ? true : false
     },
     {
-      name: "PRESTATIONS",
-      href: "/services",
-      current: currentPage === "/services" ? true : false,
+      name: 'PRESTATIONS',
+      href: '/services',
+      current: currentPage === '/services' ? true : false
     },
     {
-      name: "BLOG",
-      href: "/blog",
-      current: currentPage === "/blog" ? true : false,
+      name: 'BLOG',
+      href: '/blog',
+      current: currentPage === '/blog' ? true : false
     },
     {
-      name: "À PROPOS",
-      href: "/about",
-      current: currentPage === "/about" ? true : false,
+      name: 'À PROPOS',
+      href: '/about',
+      current: currentPage === '/about' ? true : false
     },
     {
-      name: "CONTACT",
-      href: "/contact",
-      current: currentPage === "/contact" ? true : false,
-    },
-  ];
+      name: 'CONTACT',
+      href: '/contact',
+      current: currentPage === '/contact' ? true : false
+    }
+  ]
 
   const NavigationLeft = [
-    { name: "ACCUEIL", href: "/", current: currentPage === "/" ? true : false },
+    { name: 'ACCUEIL', href: '/', current: currentPage === '/' ? true : false },
     {
-      name: "SOPHROLOGIE",
-      href: "/sophrology",
-      current: currentPage === "/sophrology" ? true : false,
+      name: 'SOPHROLOGIE',
+      href: '/sophrology',
+      current: currentPage === '/sophrology' ? true : false
     },
     {
-      name: "PRESTATIONS",
-      href: "/services",
-      current: currentPage === "/services" ? true : false,
-    },
-  ];
+      name: 'PRESTATIONS',
+      href: '/services',
+      current: currentPage === '/services' ? true : false
+    }
+  ]
 
   const NavigationRight = [
     {
-      name: "BLOG",
-      href: "/blog",
-      current: currentPage === "/blog" ? true : false,
+      name: 'BLOG',
+      href: '/blog',
+      current: currentPage === '/blog' ? true : false
     },
     {
-      name: "À PROPOS",
-      href: "/about",
-      current: currentPage === "/about" ? true : false,
+      name: 'À PROPOS',
+      href: '/about',
+      current: currentPage === '/about' ? true : false
     },
     {
-      name: "CONTACT",
-      href: "/contact",
-      current: currentPage === "/contact" ? true : false,
-    },
-  ];
+      name: 'CONTACT',
+      href: '/contact',
+      current: currentPage === '/contact' ? true : false
+    }
+  ]
   return (
     <Disclosure as="nav" className="bg-dta_graylight">
       {({ open }) => (
@@ -97,11 +97,11 @@ export default function Navbar() {
                         <button
                           className={classNames(
                             item.current
-                              ? "text-white"
-                              : "text-[#846363] hover:text-white",
-                            "px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12"
+                              ? 'text-white'
+                              : 'text-[#846363] hover:text-white',
+                            'px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12'
                           )}
-                          aria-current={item.current ? "page" : undefined}
+                          aria-current={item.current ? 'page' : undefined}
                         >
                           {item.name}
                         </button>
@@ -129,11 +129,11 @@ export default function Navbar() {
                         <button
                           className={classNames(
                             item.current
-                              ? "text-white"
-                              : "text-[#846363] hover:text-white",
-                            "px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12"
+                              ? 'text-white'
+                              : 'text-[#846363] hover:text-white',
+                            'px-3 py-2 font-epilogue font-bold transition duration-300 hover:rotate-12'
                           )}
-                          aria-current={item.current ? "page" : undefined}
+                          aria-current={item.current ? 'page' : undefined}
                         >
                           {item.name}
                         </button>
@@ -152,11 +152,11 @@ export default function Navbar() {
                   <button
                     className={classNames(
                       item.current
-                        ? " text-white"
-                        : "text-[#846363] hover:text-white",
-                      "block px-3 py-2 font-bold font-epilogue"
+                        ? ' text-white'
+                        : 'text-[#846363] hover:text-white',
+                      'block px-3 py-2 font-bold font-epilogue'
                     )}
-                    aria-current={item.current ? "page" : undefined}
+                    aria-current={item.current ? 'page' : undefined}
                   >
                     {item.name}
                   </button>
@@ -167,5 +167,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  );
+  )
 }

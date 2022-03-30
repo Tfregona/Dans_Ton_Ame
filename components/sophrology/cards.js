@@ -1,49 +1,49 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function Services() {
   const Services = [
     {
       id: 1,
-      title: "AU QUOTIDIEN",
+      title: 'AU QUOTIDIEN',
       description:
-        "Des exercices pour vous accompagner au quotidien et vous apprendre à développer vos capacités sur des sujets en particulier : développement personnel, anxiété, confiance en soi, relations…",
-      image: "/img/homepage/services1.jpeg",
+        'Des exercices pour vous accompagner au quotidien et vous apprendre à développer vos capacités sur des sujets en particulier : développement personnel, anxiété, confiance en soi, relations…',
+      image: '/img/homepage/services1.jpeg'
     },
     {
       id: 2,
-      title: "PRÉPARATION",
+      title: 'PRÉPARATION',
       description:
-        "Des situations stressantes comme parler en public, passer le permis ou un autre examen, passer un appel téléphonique ou un entretien d’embauche, nécessitent un accompagnement sur-mesure afin de gérez votre appréhension pour mieux vivre ces situations.",
-      image: "/img/homepage/services2.jpeg",
+        'Des situations stressantes comme parler en public, passer le permis ou un autre examen, passer un appel téléphonique ou un entretien d’embauche, nécessitent un accompagnement sur-mesure afin de gérez votre appréhension pour mieux vivre ces situations.',
+      image: '/img/homepage/services2.jpeg'
     },
     {
       id: 3,
-      title: "ACCOUPHENES",
+      title: 'ACCOUPHENES',
       description:
         "Ayant appris à vivre avec mes accouphenes depuis plus d'un an, je vous propose des exercices de sophrologie et de méditation pour vous apprendre à considérer vos accouphenes comme un simple bruit du quotidien que vous ne remarquerez même plus, et non pas comme un bruit parasite.",
-      image: "/img/homepage/services3.jpeg",
+      image: '/img/homepage/services3.jpeg'
     },
     {
       id: 4,
-      title: "SOMMEIL",
+      title: 'SOMMEIL',
       description:
-        "Apprenez dès maintenant à vous endormir facilement et rapidement. Gérez votre stress lié aux problèmes nocturnes,  améliorez vos nuits et ayez enfin un sommeil réparateur.",
-      image: "/img/homepage/services4.jpeg",
+        'Apprenez dès maintenant à vous endormir facilement et rapidement. Gérez votre stress lié aux problèmes nocturnes,  améliorez vos nuits et ayez enfin un sommeil réparateur.',
+      image: '/img/homepage/services4.jpeg'
     },
     {
       id: 5,
-      title: "TRAITEMENT MÉDICAUX ET PATHOLOGIES",
+      title: 'TRAITEMENT MÉDICAUX ET PATHOLOGIES',
       description:
-        "Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter des pathologies avec un point de vue différent. Elle sert d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien.",
-      image: "/img/homepage/services5.jpeg",
+        'Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter des pathologies avec un point de vue différent. Elle sert d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien.',
+      image: '/img/homepage/services5.jpeg'
     },
     {
       id: 6,
-      title: "ENTREPRISE",
-      description: "lorem latum blablum",
-      image: "/img/homepage/services6.jpeg",
-    },
-  ];
+      title: 'ENTREPRISE',
+      description: 'lorem latum blablum',
+      image: '/img/homepage/services6.jpeg'
+    }
+  ]
 
   return (
     <div className="text-dta_graydark">
@@ -75,5 +75,5 @@ export default function Services() {
         ))}
       </div>
     </div>
-  );
+  )
 }

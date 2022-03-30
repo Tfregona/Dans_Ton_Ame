@@ -1,4 +1,4 @@
-import Test from "../components/test";
+import Test from '../components/test'
 
 export default function Colors() {
   return (
@@ -11,5 +11,5 @@ export default function Colors() {
       <div className="bg-dta_graydark h-20">bg-dta_graydark</div>
       <Test />
     </>
-  );
+  )
 }

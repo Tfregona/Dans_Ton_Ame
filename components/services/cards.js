@@ -1,50 +1,50 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Cards() {
   const Services = [
     {
       id: 1,
-      title: "SOPHROLOGIE",
+      title: 'SOPHROLOGIE',
       description:
-        "Utilisez le potentiel de votre corps via des exercices de sophrologie en tout genre pendant une séance de 1 heure. Pour vaincre le stress, la peur, pour être accompagné au quotidien ou pour des situations en particulier…",
-      image: "/img/services/services1.jpeg",
-      link: "/sophrology",
+        'Utilisez le potentiel de votre corps via des exercices de sophrologie en tout genre pendant une séance de 1 heure. Pour vaincre le stress, la peur, pour être accompagné au quotidien ou pour des situations en particulier…',
+      image: '/img/services/services1.jpeg',
+      link: '/sophrology'
     },
     {
       id: 2,
-      title: "MEDITATION ET RELAXATION",
+      title: 'MEDITATION ET RELAXATION',
       description:
-        "Retrouvez la paix intérieure avec des séances de méditation de 40 minutes à 1 heure en fonction de l’objectif visé.",
-      image: "/img/services/services2.jpeg",
+        'Retrouvez la paix intérieure avec des séances de méditation de 40 minutes à 1 heure en fonction de l’objectif visé.',
+      image: '/img/services/services2.jpeg'
     },
     {
       id: 3,
-      title: "COACHING",
-      description: "Lorem",
-      image: "/img/services/services3.jpeg",
+      title: 'COACHING',
+      description: 'Lorem',
+      image: '/img/services/services3.jpeg'
     },
     {
       id: 4,
-      title: "YOGA NIDRA",
-      description: "Lorem",
-      image: "/img/services/services4.jpeg",
+      title: 'YOGA NIDRA',
+      description: 'Lorem',
+      image: '/img/services/services4.jpeg'
     },
     {
       id: 5,
-      title: "LITHOTHÉRAPIE",
+      title: 'LITHOTHÉRAPIE',
       description:
-        "Partez à la découverte du fabuleux pouvoir des cristaux et des minéraux : apprenez à connaitreleurs vertus et laissez-vous guider pendant un soin de 40 minutes à 1 heure avec ces derniers.",
-      image: "/img/services/services5.jpeg",
+        'Partez à la découverte du fabuleux pouvoir des cristaux et des minéraux : apprenez à connaitreleurs vertus et laissez-vous guider pendant un soin de 40 minutes à 1 heure avec ces derniers.',
+      image: '/img/services/services5.jpeg'
     },
     {
       id: 6,
-      title: "AUDIOS ET FICHES PERSONNALISÉS",
+      title: 'AUDIOS ET FICHES PERSONNALISÉS',
       description:
-        "Des fiches regroupant des protocoles soigneusement rédigés pour suivre votre accompagnement de A à Z, et des audios pour faire le point sur vos besoins via des méthodes de coaching. Les fiches et audios personnalisés sont envoyés sur votre boite mail. Prestation uniquement en ligne.",
-      image: "/img/services/services6.jpeg",
-    },
-  ];
+        'Des fiches regroupant des protocoles soigneusement rédigés pour suivre votre accompagnement de A à Z, et des audios pour faire le point sur vos besoins via des méthodes de coaching. Les fiches et audios personnalisés sont envoyés sur votre boite mail. Prestation uniquement en ligne.',
+      image: '/img/services/services6.jpeg'
+    }
+  ]
 
   return (
     <div className="text-dta_graydark">
@@ -75,7 +75,7 @@ export default function Cards() {
               {service.title}
             </p>
             <p>
-              {service.description}{" "}
+              {service.description}{' '}
               {service.link && (
                 <span className="font-bold ">
                   <Link href={service.link}>Voir ma page dédiée</Link>
@@ -86,5 +86,5 @@ export default function Cards() {
         ))}
       </div>
     </div>
-  );
+  )
 }

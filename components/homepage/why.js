@@ -1,35 +1,35 @@
-import Image from "next/image";
-import Checked from "../../public/img/homepage/checked.png";
+import Image from 'next/image'
+import Checked from '../../public/img/homepage/checked.png'
 
 export default function Why() {
   const Content = [
     {
       id: 1,
       description:
-        "Connaître des techniques douces et faciles à utiliser pour tous les jours",
+        'Connaître des techniques douces et faciles à utiliser pour tous les jours'
     },
     {
       id: 2,
       description:
-        "Pour apprendre à gérer le stress causé par une situation en particulier",
+        'Pour apprendre à gérer le stress causé par une situation en particulier'
     },
     {
       id: 3,
       description:
-        "Pour servir d’accompagnement en complément d’autres traitements",
+        'Pour servir d’accompagnement en complément d’autres traitements'
     },
     {
       id: 4,
       description:
-        "Pour changer votre regard et votre perception de vos problèmes",
+        'Pour changer votre regard et votre perception de vos problèmes'
     },
     {
       id: 5,
       description:
-        "Découvrir le potentiel de votre corps, de votre esprit et de votre imagination",
+        'Découvrir le potentiel de votre corps, de votre esprit et de votre imagination'
     },
-    { id: 6, description: "Adopter un mode de vie serein, sain et positif" },
-  ];
+    { id: 6, description: 'Adopter un mode de vie serein, sain et positif' }
+  ]
   return (
     <div className="bg-dta_brown text-dta_gray">
       <div className="px-6 pb-10 max-w-7xl mx-auto lg:px-24">
@@ -60,5 +60,5 @@ export default function Why() {
         </div>
       </div>
     </div>
-  );
+  )
 }
