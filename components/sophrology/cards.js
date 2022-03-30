@@ -27,14 +27,14 @@ export default function Services() {
       id: 4,
       title: "SOMMEIL",
       description:
-        "Apprenez dès maintenant à vous endormir facilement et rapidement. Gérez votre stress lié au problèmes de sommeil et ayez enfin un sommeil réparateur.",
+        "Apprenez dès maintenant à vous endormir facilement et rapidement. Gérez votre stress lié aux problèmes nocturnes,  améliorez vos nuits et ayez enfin un sommeil réparateur.",
       image: "/img/homepage/services4.jpeg",
     },
     {
       id: 5,
       title: "TRAITEMENT MÉDICAUX ET PATHOLOGIES",
       description:
-        "La sophrologie sert d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien. Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter ces maladies et pathologies avec énergie et…",
+        "Attention, la sophrologie ne soigne pas une maladie, elle vous permet d’affronter des pathologies avec un point de vue différent. Elle sert d’accompagnement pour des traitements trop lourds qui peuvent brouiller votre quotidien.",
       image: "/img/homepage/services5.jpeg",
     },
     {
@@ -67,7 +67,9 @@ export default function Services() {
               quality={30}
               priority={true}
             />
-            <p className="text-xl font-apercu font-light mt-4 mb-2 underline decoration-1 underline-offset-4">{service.title}</p>
+            <p className="text-xl font-apercu font-light mt-4 mb-2 underline decoration-1 underline-offset-4">
+              {service.title}
+            </p>
             <p>{service.description}</p>
           </div>
         ))}

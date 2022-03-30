@@ -1,21 +1,21 @@
 import Image from "next/image";
-import Home2 from "../../public/img/homepage/home2.jpeg";
-import Home3 from "../../public/img/homepage/home3.jpeg";
-import Home4 from "../../public/img/homepage/home4.jpeg";
+import Image1 from "../../public/img/decoration/image1.jpeg";
+import Image2 from "../../public/img/decoration/image2.jpeg";
+import Image3 from "../../public/img/decoration/image3.jpeg";
 
 export default function Images() {
   const Images = [
-    { id: 1, src: Home2, name: "Femme faisant du yoga" },
-    { id: 2, src: Home3, name: "Encens qui brûle" },
-    { id: 3, src: Home4, name: "Groupe faisant du yoga" },
+    { id: 1, src: Image1, name: "Femme faisant du yoga" },
+    { id: 2, src: Image2, name: "Encens qui brûle" },
+    { id: 3, src: Image3, name: "Boule de cristal" },
   ];
   return (
     <>
-      <div className="hidden py-6 lg:px-44 my-8 max-w-7xl mx-auto md:grid grid-cols-3 gap-4">
+      <div className="hidden py-8 lg:px-44 max-w-7xl mx-auto md:grid grid-cols-3 gap-4">
         {Images.map((image) => (
           <div
             className="rounded-t-full overflow-hidden flex items-center justify-center"
-            key={image.name}
+            key={image.id}
           >
             <div className="w-full">
               <Image

@@ -1,5 +1,5 @@
-import Swiper from "../components/services/swiper";
-import Cards from "../components/services/cards";
+import Swiper from '../components/services/swiper'
+import ServicesCards from '../components/services/cards'
 
 export default function Services() {
   return (
@@ -7,7 +7,7 @@ export default function Services() {
       {/* SWIPER */}
       <Swiper />
       {/* CARDS */}
-      <Cards />
+      <ServicesCards />
     </div>
-  );
+  )
 }

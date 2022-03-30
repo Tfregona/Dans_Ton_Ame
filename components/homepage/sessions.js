@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Sessions1 from "../../public/img/homepage/sessions1.png";
 import Sessions2 from "../../public/img/homepage/sessions2.png";
 import Sessions3 from "../../public/img/homepage/sessions3.png";
@@ -47,22 +48,24 @@ export default function Sessions() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {Content.map((item) => (
-          <div className="flex flex-col group" key={item.id}>
-            <div className="mx-auto w-12 transition ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
-              <Image
-                src={item.image}
-                alt={item.name}
-                width="100%"
-                height="100%"
-                layout="responsive"
-                objectFit="cover"
-                objectPosition="center top"
-                quality={30}
-                loading="lazy"
-              />
+          <Link href="/services#services">
+            <div className="flex flex-col group cursor-pointer" key={item.id}>
+              <div className="mx-auto w-12 transition ease-in-out delay-150 group-hover:-translate-y-2 group-hover:scale-125 duration-300">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="cover"
+                  objectPosition="center top"
+                  quality={30}
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-2 text-sm">{item.description}</p>
             </div>
-            <p className="text-sm">{item.description}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
