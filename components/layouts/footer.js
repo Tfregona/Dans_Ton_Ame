@@ -54,24 +54,12 @@ export default function Footer() {
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
                 PRESTATIONS
               </h6>
-              <p href="#!" className="">
-                Sophrologie
-              </p>
-              <p href="#!" className="">
-                Méditation et relaxation
-              </p>
-              <p href="#!" className="">
-                Coaching de vie
-              </p>
-              <p href="#!" className="">
-                Audios et fiches personnalisés
-              </p>
-              <p href="#!" className="">
-                Yoga nidra et yoga prana
-              </p>
-              <p href="#!" className="">
-                Lithothérapie
-              </p>
+              <p>Sophrologie</p>
+              <p>Méditation et relaxation</p>
+              <p>Coaching de vie</p>
+              <p>Audios et fiches personnalisés</p>
+              <p>Yoga nidra et yoga prana</p>
+              <p>Lithothérapie</p>
             </div>
             <div className="space-y-2">
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
