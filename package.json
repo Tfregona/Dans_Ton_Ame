@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.5.0",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "gsap": "^3.10.1",

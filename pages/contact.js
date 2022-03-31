@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import About1 from '../public/img/decoration/contact.jpg'
-import { useState, useEffect } from 'react'
-
+import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 export default function Contact() {
   const initialValues = {
     firstname: '',
@@ -21,16 +21,29 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setFormErrors(validate(formValues))
-    setIsSubmit(true)
+    const responseValidate = validate(formValues)
+    setFormErrors(responseValidate)
+    if (Object.keys(responseValidate).length === 0) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID,
+          e.target,
+          process.env.NEXT_PUBLIC_USER_ID
+        )
+        .then(
+          (result) => {
+            console.log(result)
+            setIsSubmit(true)
+          },
+          (error) => {
+            console.log(error)
+          }
+        )
+      e.target.reset()
+    }
   }
 
-  useEffect(() => {
-    console.log(formErrors)
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues)
-    }
-  }, [formErrors])
   const validate = (values) => {
     const errors = {}
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
@@ -50,7 +63,7 @@ export default function Contact() {
     } else if (values.message.length < 4) {
       errors.message = 'Votre message doit faire plus de 4 caractères'
     } else if (values.message.length > 10) {
-      errors.message = 'Votre message doit faire moins de 10 caractères'
+      errors.message = 'Votre message ne doit pas excéder les 10 caractères'
     }
     return errors
   }
@@ -62,6 +75,9 @@ export default function Contact() {
           <p className="py-8 md:pb-14 text-center font-steinfeld text-5xl">
             Contactez-moi
           </p>
+          {isSubmit && (
+            <p className="text-center">Votre message s'est bien envoyé !</p>
+          )}
           <div className="flex flex-wrap mb-6">
             <div className="w-full md:w-1/2 mb-6 px-3 md:mb-0">
               <label className="block tracking-wide text-base font-bold mb-2">
@@ -155,7 +171,10 @@ export default function Contact() {
               </label>
               <p className="text-xs italic">
                 Précisez la raison de votre demande de contact entre 4 et 10
-                caractères {formValues.message.length}
+                caractères
+              </p>
+              <p className="text-xs italic">
+                Voues êtes actuellement à {formValues.message.length}/10
               </p>
               <textarea
                 className={
