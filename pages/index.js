@@ -43,7 +43,7 @@ export default function Home() {
         duration: duration || 0.6,
         scrollTrigger: {
           trigger: elem,
-          start: 'center bottom',
+          start: 'top center',
           end: 'bottom center'
         }
       }

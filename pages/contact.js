@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="flex items-center justify-center">
         <form className="md:w-4/5">
           <p className="py-8 md:pb-14 text-center font-steinfeld text-5xl">
-            Prenez contact
+            Contactez-moi
           </p>
           <div className="flex flex-wrap mb-6">
             <div className="w-full md:w-1/2 mb-6 px-3 md:mb-0">
@@ -44,7 +44,8 @@ export default function Contact() {
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label className="block tracking-wide text-base font-bold mb-2">
-                TÉLÉPHONE<span className="text-xs italic font-normal"> Optionnel</span>
+                TÉLÉPHONE
+                <span className="text-xs italic font-normal"> Optionnel</span>
               </label>
               <input
                 className="text-gray-700 appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
