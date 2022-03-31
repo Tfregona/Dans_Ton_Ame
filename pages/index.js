@@ -6,6 +6,7 @@ import Sessions from '../components/homepage/sessions'
 import Values from '../components/homepage/values'
 import Contact from '../components/homepage/contact'
 
+// Import for animation on scroll
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -13,6 +14,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export default function Home() {
+  // Animation on scroll
   const titlref = useRef()
   const onLoad = () => {
     gsap.timeline().fromTo(
@@ -71,7 +73,7 @@ export default function Home() {
           backgroundPosition: 'center'
         }}
       >
-        <div className="p-5 py-24">
+        <div className="title p-5 py-24">
           <h1 className="text-4xl" ref={titlref}>
             <span className="letter-title">A</span>
             <span className="letter-title">L</span>

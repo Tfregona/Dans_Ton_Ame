@@ -1,45 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Font Apercu */
 @font-face {
-  font-family: "Apercu";
+  font-family: 'Apercu';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/apercu/ApercuMonoPro-Regular.woff2") format("woff2"),
-    url("/fonts/apercu/ApercuMonoPro-Regular.woff") format("woff");
+  src: url('/fonts/apercu/ApercuMonoPro-Regular.woff2') format('woff2'),
+    url('/fonts/apercu/ApercuMonoPro-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: "Apercu";
+  font-family: 'Apercu';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/apercu/ApercuMonoPro-Light.woff2") format("woff2"),
-    url("/fonts/apercu/ApercuMonoPro-Light.woff") format("woff");
+  src: url('/fonts/apercu/ApercuMonoPro-Light.woff2') format('woff2'),
+    url('/fonts/apercu/ApercuMonoPro-Light.woff') format('woff');
 }
 @font-face {
-  font-family: "Apercu";
+  font-family: 'Apercu';
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/apercu/ApercuMonoPro-Medium.woff2") format("woff2"),
-    url("/fonts/apercu/ApercuMonoPro-Medium.woff") format("woff");
+  src: url('/fonts/apercu/ApercuMonoPro-Medium.woff2') format('woff2'),
+    url('/fonts/apercu/ApercuMonoPro-Medium.woff') format('woff');
 }
 @font-face {
-  font-family: "Apercu";
+  font-family: 'Apercu';
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/apercu/ApercuMonoPro-Bold.woff2") format("woff2"),
-    url("/fonts/apercu/ApercuMonoPro-Bold.woff") format("woff");
+  src: url('/fonts/apercu/ApercuMonoPro-Bold.woff2') format('woff2'),
+    url('/fonts/apercu/ApercuMonoPro-Bold.woff') format('woff');
 }
 /* Font Steinfeld */
 @font-face {
-  font-family: "Steinfeld";
+  font-family: 'Steinfeld';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/steinfeld/steinfeld_demo-webfont.woff2") format("woff2"),
-    url("/fonts/steinfeld/steinfeld_demo-webfont.woff") format("woff");
+  src: url('/fonts/steinfeld/steinfeld_demo-webfont.woff2') format('woff2'),
+    url('/fonts/steinfeld/steinfeld_demo-webfont.woff') format('woff');
 }
 
 html,
@@ -58,4 +58,37 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.custom-shape-divider-bottom-1648732741 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648732741 svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 123px;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1648732741 svg {
+    width: calc(121% + 1.3px);
+    height: 78px;
+  }
+}
+
+.custom-shape-divider-bottom-1648732741 .shape-fill-background {
+  fill: #e7e5e6;
+}
+
+.custom-shape-divider-bottom-1648732741 .shape-fill-white {
+  fill: #f3f4f6;
 }

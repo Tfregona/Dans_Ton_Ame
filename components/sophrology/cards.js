@@ -46,15 +46,30 @@ export default function Services() {
   ]
 
   return (
-    <div className="text-dta_gray pb-14">
-      <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
-        La sophrologie et vous
-      </p>
-      <div className="px-6 pb-14 max-w-5xl mx-auto md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="text-dta_graydark pb-14">
+      <div className="relative bg-dta_brown">
+        <p className="py-8 md:py-24 text-dta_gray text-center font-steinfeld text-5xl">
+          La sophrologie et vous
+        </p>
+        <div class="custom-shape-divider-bottom-1648732741">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill-background"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div className="px-6 py-14 max-w-5xl mx-auto md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         {Services.map((service) => (
           <div
             key={service.id}
-            className="p-3 text-center border-2 border-dta_gray ease-in-out delay-150 hover:-translate-y-2 hover:scale-105 duration-300"
+            className="p-3 text-center border-2 border-dta_graydark ease-in-out delay-150 hover:-translate-y-2 hover:scale-105 duration-300"
           >
             <Image
               src={service.image}
