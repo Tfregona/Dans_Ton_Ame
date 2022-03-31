@@ -22,7 +22,7 @@ export default function Sessions() {
     {
       id: 3,
       image: Sessions3,
-      description: 'COACHING'
+      description: 'COACHING DE VIE'
     },
     {
       id: 4,

@@ -43,17 +43,20 @@ export default function Home() {
         duration: duration || 0.6,
         scrollTrigger: {
           trigger: elem,
-          start: 'top center',
+          start: 'center bottom',
           end: 'bottom center'
         }
       }
     )
   }
   useEffect(() => {
-    SlideTop('#top')
+    onLoad()
   }, [])
   useEffect(() => {
-    onLoad()
+    SlideTop('#About')
+  }, [])
+  useEffect(() => {
+    SlideTop('#Values')
   }, [])
   return (
     <>

@@ -18,9 +18,6 @@ export default function Footer() {
     <footer className="text-center lg:text-left text-gray-600">
       <div className="bg-gray-100">
         <div className="p-6 max-w-7xl mx-auto lg:px-8 border-b border-gray-300">
-          <p className="text-xl lg:absolute z-10 text-black font-steinfeld">
-            Get connected with us on social networks:
-          </p>
           <div className="hidden lg:grid lg:grid-cols-5 lg:gap-4 mt-4">
             {Images.map((image) => (
               <Image
@@ -44,11 +41,8 @@ export default function Footer() {
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
                 DESCRIPTION
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+              <p>Alicia Gomes</p>
+              <p>Sophrologue</p>
             </div>
             <div className="space-y-2">
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">

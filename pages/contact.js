@@ -15,7 +15,7 @@ export default function Contact() {
                 NOM
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="text-gray-700 appearance-none block w-full bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 type="text"
                 placeholder="Votre nom"
               />
@@ -25,7 +25,7 @@ export default function Contact() {
                 PRÉNOM
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="text-gray-700 appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 type="text"
                 placeholder="Votre prénom"
               />
@@ -37,18 +37,18 @@ export default function Contact() {
                 EMAIL
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="text-gray-700 appearance-none block w-full bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 type="email"
                 placeholder="Votre adresse mail valide"
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label className="block tracking-wide text-base font-bold mb-2">
-                TÉLÉPHONE
+                TÉLÉPHONE<span className="text-xs italic font-normal"> Optionnel</span>
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                type="text"
+                className="text-gray-700 appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                type="tel"
                 placeholder="Votre numéro de téléphone"
               />
             </div>
@@ -62,7 +62,7 @@ export default function Contact() {
                 Précisez la raison de votre demande de contact
               </p>
               <textarea
-                className="resize-none h-28 appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="text-gray-700 resize-none h-28 appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 type="text"
                 placeholder="Entrez votre message"
               />

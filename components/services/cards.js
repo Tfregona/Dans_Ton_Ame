@@ -58,7 +58,7 @@ export default function Cards() {
         {Services.map((service) => (
           <div
             key={service.id}
-            className="p-3 text-center border-2 border-dta_graydark"
+            className="p-3 text-center border-2 border-dta_graydark ease-in-out delay-150 hover:-translate-y-2 hover:scale-105 duration-300"
           >
             <Image
               src={service.image}

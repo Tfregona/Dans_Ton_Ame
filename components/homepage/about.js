@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="top" className="px-6 pb-16 max-w-7xl mx-auto lg:px-8">
+    <div id="About" className="px-6 pb-16 max-w-7xl mx-auto lg:px-8">
       <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
         L'histoire de la sophrologie
       </p>

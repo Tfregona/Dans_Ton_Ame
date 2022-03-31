@@ -67,15 +67,15 @@ export default function You() {
           <div className="md:pr-6 text-center md:text-right">
             <a
               href="mailto:danstoname@gmail.com"
-              className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer bg-dta_pink text-white"
+              className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer bg-dta_brown text-white"
             >
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
               <span className="relative">danstoname@gmail.com</span>
             </a>
           </div>
           <div className="md:pl-16 text-center md:text-left">
-            <a className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 bg-dta_pink text-white">
-              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"></span>
+            <a className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 bg-dta_brown text-white">
+              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
               <span className="relative">06.45.43.95.95</span>
             </a>
           </div>

@@ -27,7 +27,7 @@ export default function Values() {
 
   return (
     <div className="bg-dta_pink text-white">
-      <div className="pb-10 max-w-7xl mx-auto lg:px-8 text-center">
+      <div id="Values" className="pb-10 max-w-7xl mx-auto lg:px-8 text-center">
         <p className="p-4 md:p-10 font-steinfeld text-5xl">Mes valeurs</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {Content.map((item) => (
