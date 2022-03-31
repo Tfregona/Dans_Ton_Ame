@@ -87,7 +87,7 @@ export default function Contact() {
             layout="responsive"
             objectFit="cover"
             objectPosition="center top"
-            quality={30}
+            quality={75}
             priority={true}
           />
         </div>

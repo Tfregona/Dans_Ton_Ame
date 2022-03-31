@@ -2,8 +2,11 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import Navbar from '../components/layouts/navbar'
 import Footer from '../components/layouts/footer'
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
 
 function MyApp({ Component, pageProps }) {
+  gsap.registerPlugin(CSSPlugin)
   return (
     <>
       <Head>

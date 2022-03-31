@@ -1,13 +1,10 @@
-import Images from '../components/sophrology/images'
 import ServicesCards from '../components/sophrology/cards'
 
 export default function Sophrology() {
   return (
-    <div>
+    <div className="bg-dta_brown">
       {/* Services */}
       <ServicesCards />
-      {/* Images */}
-      <Images />
     </div>
   )
 }

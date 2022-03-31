@@ -46,15 +46,15 @@ export default function Services() {
   ]
 
   return (
-    <div>
+    <div className="text-dta_gray pb-14">
       <p className="py-8 md:py-14 text-center font-steinfeld text-5xl">
         La sophrologie et vous
       </p>
-      <div className="px-6 mb-14 max-w-5xl mx-auto md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="px-6 pb-14 max-w-5xl mx-auto md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         {Services.map((service) => (
           <div
             key={service.id}
-            className="p-3 text-center border-2 border-dta_graydark"
+            className="p-3 text-center border-2 border-dta_gray"
           >
             <Image
               src={service.image}
