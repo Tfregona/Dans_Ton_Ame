@@ -34,17 +34,15 @@ export default function About() {
           nombreuses choses.
         </p>
         <p className="md:pl-8 md:border-l-2 md:border-dta_graydark">
-          Le Lorem Ipsum est simplement du faux texte employé dans la
-          composition et la mise en page avant impression. Le Lorem Ipsum est le
-          faux texte standard de l'imprimerie depuis les années 1500, quand un
-          imprimeur anonyme assembla ensemble des morceaux de texte pour
-          réaliser un livre spécimen de polices de texte. Il n'a pas fait que
-          survivre cinq siècles, mais s'est aussi adapté à la bureautique
-          informatique, sans que son contenu n'en soit modifié. Il a été
-          popularisé dans les années 1960 grâce à la vente de feuilles Letraset
-          contenant des passages du Lorem Ipsum, et, plus récemment, par son
-          inclusion dans des applications de mise en page de texte, comme Aldus
-          PageMaker.
+          Le sophrologue est un thérapeute qui utilise la sophrologie comme
+          outil. Mon but est de vous accompagner dans la recherche de solutions
+          qui vous aideront pour améliorer le quotidien, vous préparer
+          mentalement, être un complément de traitements médicaux ou pour gérer
+          des comportements pathologiques… mais également pour changer la
+          perception que vous avez de vos contrariétés. Laissez-moi vous guider
+          pour trouver ces solutions en vous aidant à écouter votre corps et
+          votre esprit, à être attentif à vos ressentis, à vous inscrire dans le
+          moment présent, et bien plus.
         </p>
       </div>
     </div>

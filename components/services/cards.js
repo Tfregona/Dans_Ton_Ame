@@ -7,42 +7,29 @@ export default function Cards() {
       id: 1,
       title: 'SOPHROLOGIE',
       description:
-        'Utilisez le potentiel de votre corps via des exercices de sophrologie en tout genre pendant une séance de 1 heure. Pour vaincre le stress, la peur, pour être accompagné au quotidien ou pour des situations en particulier…',
+        'Utilisez le potentiel de votre esprit via des exercices de sophrologie en tout genre pendant une séance de 1 heure à 1h30. Découvrez des méthodes efficaces pour vaincre le stress, la peur, pour améliorer votre quotidien ou pour être accompagné lors de certaines périodes…',
       image: '/img/services/services1.jpeg',
       link: '/sophrology'
     },
     {
       id: 2,
-      title: 'MEDITATION ET RELAXATION',
+      title: 'MEDITATION PLEINE CONSCIENCE',
       description:
-        'Retrouvez la paix intérieure avec des séances de méditation de 40 minutes à 1 heure en fonction de l’objectif visé.',
+        'Retrouvez la paix intérieure avec des séances de méditation pleine conscience d’environ 1 heure (ou plus) en fonction de l’objectif visé. La méditation pleine conscience est',
       image: '/img/services/services2.jpeg'
     },
     {
       id: 3,
-      title: 'COACHING',
-      description: 'Lorem',
+      title: 'COACHING DE VIE',
+      description:
+        'Des fiches regroupant des protocoles soigneusement rédigés pour définir un accompagnement et vous suivre de A à Z, des audios pour faire le point sur vos besoins via des méthodes de coaching. Les fiches et audios personnalisés sont envoyés sur votre boite mail, et revues ensemble en rendez-vous.',
       image: '/img/services/services3.jpeg'
     },
     {
       id: 4,
-      title: 'YOGA NIDRA',
+      title: 'YOGA NIDRA ET YOGA PRANA, COHÉRENCE CARDIAQUE',
       description: 'Lorem',
       image: '/img/services/services4.jpeg'
-    },
-    {
-      id: 5,
-      title: 'LITHOTHÉRAPIE',
-      description:
-        'Partez à la découverte du fabuleux pouvoir des cristaux et des minéraux : apprenez à connaitreleurs vertus et laissez-vous guider pendant un soin de 40 minutes à 1 heure avec ces derniers.',
-      image: '/img/services/services5.jpeg'
-    },
-    {
-      id: 6,
-      title: 'AUDIOS ET FICHES PERSONNALISÉS',
-      description:
-        'Des fiches regroupant des protocoles soigneusement rédigés pour suivre votre accompagnement de A à Z, et des audios pour faire le point sur vos besoins via des méthodes de coaching. Les fiches et audios personnalisés sont envoyés sur votre boite mail. Prestation uniquement en ligne.',
-      image: '/img/services/services6.jpeg'
     }
   ]
 
@@ -54,7 +41,7 @@ export default function Cards() {
       >
         Mes prestations
       </p>
-      <div className="px-6 pb-14 max-w-5xl mx-auto md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="px-6 pb-14 max-w-5xl mx-auto md:px-24 grid grid-cols-1 md:grid-cols-2 gap-10">
         {Services.map((service) => (
           <div
             key={service.id}

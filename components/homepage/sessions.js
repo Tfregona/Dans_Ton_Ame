@@ -4,8 +4,6 @@ import Sessions1 from '../../public/img/homepage/sessions1.png'
 import Sessions2 from '../../public/img/homepage/sessions2.png'
 import Sessions3 from '../../public/img/homepage/sessions3.png'
 import Sessions4 from '../../public/img/homepage/sessions4.png'
-import Sessions5 from '../../public/img/homepage/sessions5.png'
-import Sessions6 from '../../public/img/homepage/sessions6.png'
 
 export default function Sessions() {
   const Content = [
@@ -27,17 +25,7 @@ export default function Sessions() {
     {
       id: 4,
       image: Sessions4,
-      description: 'YOGA NIDRA ET YOGA DU SOUFFLE'
-    },
-    {
-      id: 5,
-      image: Sessions5,
-      description: 'LITHOTHÉRAPIE'
-    },
-    {
-      id: 6,
-      image: Sessions6,
-      description: 'AUDIOS ET FICHES PERSONNALISÉS'
+      description: 'YOGA NIDRA ET YOGA DU SOUFFLE, COHÉRENCE CARDIAQUE'
     }
   ]
   return (
@@ -45,7 +33,7 @@ export default function Sessions() {
       <p className="pb-4 md:pb-10 text-xl font-light">
         RETROUVEZ D’AUTRES PRESTATIONS :
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center space-y-5 md:space-y-0 md:space-x-20">
         {Content.map((item) => (
           <Link href="/services#services" key={item.id}>
             <div className="flex flex-col group cursor-pointer">

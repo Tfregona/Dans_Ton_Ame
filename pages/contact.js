@@ -13,6 +13,7 @@ export default function Contact() {
   const [formValues, setFormValues] = useState(initialValues)
   const [formErrors, setFormErrors] = useState({})
   const [isSubmit, setIsSubmit] = useState(false)
+  const [ErrorMessage, setErrorMessage] = useState(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -38,6 +39,7 @@ export default function Contact() {
           },
           (error) => {
             console.log(error)
+            setErrorMessage('Une erreur est survenue')
           }
         )
       e.target.reset()
@@ -60,10 +62,10 @@ export default function Contact() {
     }
     if (!values.message) {
       errors.message = 'Un message est requis !'
-    } else if (values.message.length < 4) {
-      errors.message = 'Votre message doit faire plus de 4 caractères'
-    } else if (values.message.length > 10) {
-      errors.message = 'Votre message ne doit pas excéder les 10 caractères'
+    } else if (values.message.length < 50) {
+      errors.message = 'Votre message doit faire plus de 50 caractères'
+    } else if (values.message.length > 500) {
+      errors.message = 'Votre message ne doit pas excéder les 500 caractères'
     }
     return errors
   }
@@ -75,9 +77,6 @@ export default function Contact() {
           <p className="py-8 md:pb-14 text-center font-steinfeld text-5xl">
             Contactez-moi
           </p>
-          {isSubmit && (
-            <p className="text-center">Votre message s'est bien envoyé !</p>
-          )}
           <div className="flex flex-wrap mb-6">
             <div className="w-full md:w-1/2 mb-6 px-3 md:mb-0">
               <label className="block tracking-wide text-base font-bold mb-2">
@@ -170,16 +169,16 @@ export default function Contact() {
                 )}
               </label>
               <p className="text-xs italic">
-                Précisez la raison de votre demande de contact entre 4 et 10
+                Précisez la raison de votre demande de contact entre 50 et 500
                 caractères
               </p>
               <p className="text-xs italic">
-                Voues êtes actuellement à {formValues.message.length}/10
+                Voues êtes actuellement à {formValues.message.length}/500
               </p>
               <textarea
                 className={
                   'text-gray-700 resize-none h-28 appearance-none block w-full bg-gray-200 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' +
-                  (formErrors.message && ' border-red-500')
+                  (formErrors.message && 'border-red-500')
                 }
                 type="text"
                 name="message"
@@ -187,10 +186,18 @@ export default function Contact() {
                 value={formValues.message}
                 onChange={handleChange}
               />
-              <button className="rounded border-2 overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 text-white">
-                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"></span>
-                <span className="relative">Envoyer</span>
-              </button>
+              <div class="flex justify-between items-center">
+                <button className="rounded border-2 overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 text-white">
+                  <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"></span>
+                  <span className="relative">Envoyer</span>
+                </button>
+                {isSubmit && (
+                  <p className="text-center">Votre message s'est bien envoyé !</p>
+                )}
+                {ErrorMessage && (
+                  <p className="text-center text-red-500">{ErrorMessage}</p>
+                )}
+              </div>
             </div>
           </div>
         </form>

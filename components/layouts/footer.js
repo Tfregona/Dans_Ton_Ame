@@ -48,12 +48,10 @@ export default function Footer() {
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
                 PRESTATIONS
               </h6>
-              <p>Sophrologie</p>
-              <p>Méditation et relaxation</p>
-              <p>Coaching de vie</p>
-              <p>Audios et fiches personnalisés</p>
-              <p>Yoga nidra et yoga prana</p>
-              <p>Lithothérapie</p>
+              <p class="text-sm">Sophrologie</p>
+              <p class="text-sm">Méditation et relaxation</p>
+              <p class="text-sm">Coaching de vie</p>
+              <p class="text-sm">Yoga nidra et yoga prana, cohérence cardiaque</p>
             </div>
             <div className="space-y-2">
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
@@ -83,7 +81,7 @@ export default function Footer() {
                 dans.ton.ame
               </a>
               <a
-                href="https://instagram.com/dans.ton.ame"
+                href="https://www.facebook.com/aliciagomes.sophrologue"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-dta_gray transition duration-300 flex items-center justify-center md:justify-start"
@@ -92,7 +90,7 @@ export default function Footer() {
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fab"
-                  data-icon="instagram"
+                  data-icon="facebook"
                   className="w-4 mr-2"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +101,30 @@ export default function Footer() {
                     d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
                   ></path>
                 </svg>
-                dans.ton.ame
+                Alicia Gomes sophrologue
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alicia-gomes-59471520b"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-dta_gray transition duration-300 flex items-center justify-center md:justify-start"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="linkedin"
+                  className="w-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  ></path>
+                </svg>
+                LinkedIn
               </a>
             </div>
             <div className="space-y-2">
@@ -172,7 +193,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center p-6 bg-gray-200">
-        <p className="text-sm">
+        <p>
           © 2022{' '}
           <Link href="/">
             <button className="text-gray-600 font-semibold">
@@ -180,7 +201,7 @@ export default function Footer() {
             </button>
           </Link>
         </p>
-        <p>
+        <p class="text-sm">
           🍃 Site réalisé par{' '}
           <a
             href="https://fregonatristan.herokuapp.com"

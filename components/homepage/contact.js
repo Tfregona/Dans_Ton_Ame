@@ -4,36 +4,46 @@ export default function Conact() {
       name: 'instagram',
       icon: 'M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z',
       viewbox: '0 0 448 512',
-      link: 'https://instagram.com/dans.ton.ame'
+      link: 'https://instagram.com/dans.ton.ame',
+      text: 'Instagram'
     },
     {
       name: 'facebook',
       icon: 'M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z',
       viewbox: '0 0 24 24',
-      link: 'https://facebook.com'
+      link: 'https://www.facebook.com/aliciagomes.sophrologue',
+      text: 'Facebook'
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z',
+      viewbox: '0 0 24 24',
+      link: 'https://www.linkedin.com/in/alicia-gomes-59471520b',
+      text: 'LinkedIn'
     }
   ]
   return (
     <div className="relative">
       <div className="px-6 pt-16 pb-24 max-w-7xl mx-auto lg:px-8 text-center">
         <p className="mb-4 text-xl">SUIVRE L'ACTUALITÉ</p>
-        <div className="flex items-center justify-center space-x-6">
+        <div className="flex items-center justify-center space-x-10">
           {Socials.map((item) => (
             <a
               key={item.name}
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-dta_gray transition duration-300"
+              className="hover:text-dta_gray transition duration-300 flex-column items-center justify-center"
             >
               <svg
                 data-icon={item.name}
-                className="w-10"
+                className="w-10 mx-auto"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox={item.viewbox}
               >
                 <path fill="currentColor" d={item.icon}></path>
               </svg>
+              <span>{item.text}</span>
             </a>
           ))}
         </div>

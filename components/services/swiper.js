@@ -9,31 +9,33 @@ export default function SwiperComponent() {
   const Images = [
     {
       id: 1,
-      name: 'Méditation',
+      name: 'Plaine verte',
       src: '/img/swiper/swiper1.jpg',
-      title: 'titre',
-      description: 'Lorem ipsum latum latum'
+      title: 'Être sophrologue',
+      description:
+        'Le métier de sophrologue comporte deux activités : animer des séances et élaborer des parcours d’accompagnement adaptés à chacun de ses clients.'
     },
     {
       id: 2,
-      name: 'Bol tibétain',
+      name: 'Bureau de travail',
       src: '/img/swiper/swiper2.jpg',
-      title: 'titre',
-      description: 'Lorem ipsum latum latum'
+      title: 'Qu’est-ce que c’est la sophrologie ?',
+      description:
+        'Les moyens de la sophrologie : une respiration contrôlée pour une meilleure gestion de émotions, une détente musculaire pour solliciter le relâchement mental, des visualisation positives pour reprogrammer les pensées.'
     },
     {
       id: 3,
-      name: 'Cristaux',
+      name: 'Bureau',
       src: '/img/swiper/swiper3.jpg',
-      title: 'titre',
-      description: 'Lorem ipsum latum latum'
+      title: 'Le saviez-vous ?',
+      description: 'Le sophrologue est un thérapeute qui utilise la sophrologie comme outil'
     },
     {
       id: 4,
-      name: 'Femme sur son ordinateur',
+      name: 'Bol tibétain',
       src: '/img/swiper/swiper4.jpg',
-      title: 'titre',
-      description: 'Lorem ipsum latum latum'
+      title: 'Pour qui ?',
+      description: 'Pour toutes et tous : enfants, jeunes ados, jeunes adultes, adultes, seniors…'
     }
   ]
   return (
@@ -68,8 +70,8 @@ export default function SwiperComponent() {
               }}
               className="lg:p-36"
             >
-              <div className="p-20 bg-white/50 w-[100vw] md:max-w-min">
-                <p className="whitespace-nowrap">Lorem etum latum him</p>
+              <div className="p-10 bg-white/75 rounded-xl rounded-bl-none text-black w-[100vw] md:max-w-[40vw]">
+                <p className="whitespace-nowrap font-semibold">{image.title}</p>
                 <p>{image.description}</p>
               </div>
             </div>

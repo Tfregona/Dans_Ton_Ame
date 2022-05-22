@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import About1 from '../public/img/homepage/home1.jpeg'
+import About1 from '../public/img/about/about1.jpg'
+import About2 from '../public/img/about/about2.jpg'
+import About3 from '../public/img/about/about3.jpg'
 
 export default function About() {
   return (
@@ -13,18 +15,19 @@ export default function About() {
             </p>
             <p className="indent-8 text-justify">
               Fibromyalgique et atteinte d’acouphènes depuis quelques années, la
-              sophrologie et les médecines douces sont ce qui m’ont sauvé. Après
-              de nombreuses années de galère avec médicaments et traitements, je
-              me suis finalement tournée vers la spiritualité à l’âge de 17 ans
-              afin de trouver une réponse à mes douleurs physiques,
-              émotionnelles, ou bien psychique. Le parcours a été long et
-              je peux être fière de dire que sophrologie, magnétisme, ou encore
-              naturopathie m’ont sauvé. Attention, je ne dis pas que les
-              traitements ne fonctionnent pas. Je pense simplement que nous
-              sommes bien plus qu’un corps fait de chair. Nous avons une âme,
-              une pensée, et un corps, qui nous écoutent, et qui nous envoient
-              leurs propres messages. À nous de les écouter, de les soigner et
-              de nous re-connecter à nos vraies valeurs…
+              sophrologie et les médecines douces sont ce qui ont totalement
+              changé ma vie. Après de nombreuses années de galère avec
+              médicaments et traitements, je me suis finalement tournée vers les
+              médecines alternatives à l’âge de 17 ans afin de trouver une
+              réponse à mes douleurs physiques, émotionnelles, ou bien
+              psychique. Le parcours a été long et je peux être fière de dire
+              que sophrologie, méditation, ou encore naturopathie m’ont sauvé.
+              Attention, je ne dis pas que les traitements ne fonctionnent pas.
+              Je pense simplement que nous sommes bien plus qu’un corps fait de
+              chair. Nous avons une âme, une pensée, et un corps, qui nous
+              écoutent, et qui nous envoient leurs propres messages. À nous de
+              les écouter, de les soigner et de nous re-connecter à nos vraies
+              valeurs…
             </p>
           </div>
           <div className="hidden lg:flex lg:justify-center">
@@ -37,7 +40,7 @@ export default function About() {
                 objectPosition="center top"
                 quality={30}
                 src={About1}
-                alt="About 1"
+                alt="Alicia Gomes sophrologue"
               />
             </div>
           </div>
@@ -53,8 +56,8 @@ export default function About() {
               objectFit="cover"
               objectPosition="center top"
               quality={30}
-              src={About1}
-              alt="About 1"
+              src={About3}
+              alt="Fond blanc"
             />
           </div>
           <div className="w-[10em] xl:w-[20em] absolute ml-44 -mt-44 border-4 border-dta_gray">
@@ -65,8 +68,8 @@ export default function About() {
               objectFit="cover"
               objectPosition="center top"
               quality={30}
-              src={About1}
-              alt="About 1"
+              src={About2}
+              alt="Alicia Gomes sophrologue"
             />
           </div>
         </div>
@@ -74,10 +77,13 @@ export default function About() {
           <div>
             <p className="text-xl font-light font-apercu">MES FORMATIONS</p>
             <ul>
-              <li>Licence Information & Communication</li>
-              <li>École française de lithothérapie</li>
+              <li>Licence Information & Communication bac+3</li>
               <li>Formation certifiante Udemy en yoga nidra</li>
               <li>Formation certifiante Udemy en coaching de vie</li>
+              <li>
+                Formation certifiante Udemy en méditation pleine conscience
+              </li>
+              <li>Formation Institut de Formation à la Sophrologie Annecy</li>
             </ul>
           </div>
         </div>
