@@ -3,7 +3,7 @@ export default function Landig() {
     <div
       className="w-full text-center text-black p-10"
       style={{
-        backgroundImage: `url(/img/swiper/swiper2.jpg)`,
+        backgroundImage: `url(/img/swiper/swiper1.jpg)`,
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

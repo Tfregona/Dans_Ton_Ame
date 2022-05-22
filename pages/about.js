@@ -77,13 +77,25 @@ export default function About() {
           <div>
             <p className="text-xl font-light font-apercu">MES FORMATIONS</p>
             <ul>
-              <li>Licence Information & Communication bac+3</li>
-              <li>Formation certifiante Udemy en yoga nidra</li>
-              <li>Formation certifiante Udemy en coaching de vie</li>
+              <li>○ Licence Information & Communication bac+3</li>
               <li>
-                Formation certifiante Udemy en méditation pleine conscience
+                ○ Formation à l'Institut de Formation à la Sophrologie Annecy
               </li>
-              <li>Formation Institut de Formation à la Sophrologie Annecy</li>
+              <li>
+                ○ Formation certifiante en méditation pleine conscience par
+                Jeanne Siaud-Facchin, psychologue clinicienne
+              </li>
+              <li>
+                ○ Formation certifiante en yoga nidra par Ali Chahat,
+                Instructeur certifié de yoga & diplômé de Psychologie
+              </li>
+              <li>
+                ○ Formation certifiante en coaching de vie par Therese Ferland,
+                coach santé bien-être
+              </li>
+              <li>
+                ○ Formation certifiante Udemy en cohérence cardiaque, yoga prana
+              </li>
             </ul>
           </div>
         </div>
