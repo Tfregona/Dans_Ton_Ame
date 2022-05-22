@@ -42,7 +42,7 @@ export default function Footer() {
                 DESCRIPTION
               </h6>
               <p>Alicia Gomes</p>
-              <p>Sophrologue</p>
+              <p>Sophrologue, spécialiste du bien être</p>
             </div>
             <div className="space-y-2">
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">

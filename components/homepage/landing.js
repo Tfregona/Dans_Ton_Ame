@@ -3,7 +3,7 @@ export default function Landig() {
     <div
       className="w-full text-center text-black p-10"
       style={{
-        backgroundImage: `url(/img/swiper/swiper1.jpg)`,
+        backgroundImage: `url(/img/homepage/home.jpg)`,
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -28,6 +28,7 @@ export default function Landig() {
           <span className="letter-title">S</span>
         </h1>
         <h2 className="letter-title text-xl font-bold">Sophrologue</h2>
+        <h2 className="letter-title text-xl font-bold">Spécialiste du bien être</h2>
       </div>
     </div>
   )

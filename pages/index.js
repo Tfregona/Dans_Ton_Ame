@@ -91,6 +91,7 @@ export default function Home() {
             <span className="letter-title">S</span>
           </h1>
           <h2 className="letter-title text-xl font-bold">Sophrologue</h2>
+          <h2 className="letter-title text-xl font-bold">Spécialiste du bien être</h2>
         </div>
       </div>
       {/* Why */}
