@@ -2,6 +2,9 @@
   "name": "dans_ton_ame",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "v16.13.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
