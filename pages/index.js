@@ -66,14 +66,14 @@ export default function Home() {
       <div
         className="w-full text-center text-black p-10"
         style={{
-          backgroundImage: `url(/img/swiper/swiper2.jpg)`,
+          backgroundImage: `url(/img/homepage/homeBanner.jpg)`,
           backgroundAttachment: 'fixed',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       >
-        <div className="title p-5 py-24">
+        <div className="title p-5 py-24 text-[#846363] font-bold">
           <h1 className="text-4xl" ref={titlref}>
             <span className="letter-title">A</span>
             <span className="letter-title">L</span>
@@ -91,7 +91,9 @@ export default function Home() {
             <span className="letter-title">S</span>
           </h1>
           <h2 className="letter-title text-xl font-bold">Sophrologue</h2>
-          <h2 className="letter-title text-xl font-bold">Spécialiste du bien être</h2>
+          <h2 className="letter-title text-xl font-bold">
+            Spécialiste du bien être
+          </h2>
         </div>
       </div>
       {/* Why */}

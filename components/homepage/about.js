@@ -26,7 +26,9 @@ export default function About() {
           s’utiliser au quotidien. Visant à modifier votre point de vue sur les
           situations qui génèrent du stress en vous, la sophrologie vous aide à
           vivre ces instants de manière détendu, serein, et changent la
-          situation en quelque chose d’agréable. C’est le cas pour des
+          situation en quelque chose d’agréable. 
+          <br/>
+          C’est le cas pour des
           situations comme l’examen du permis de conduire, un entretien
           d’embauche ou un accouchement. C’est par le biais de plus d’une
           soixantaine d’exercice que la sophrologie vous prépare, à l’avance, à
@@ -39,7 +41,9 @@ export default function About() {
           qui vous aideront pour améliorer le quotidien, vous préparer
           mentalement, être un complément de traitements médicaux ou pour gérer
           des comportements pathologiques… mais également pour changer la
-          perception que vous avez de vos contrariétés. Laissez-moi vous guider
+          perception que vous avez de vos contrariétés. 
+          <br/>
+          Laissez-moi vous guider
           pour trouver ces solutions en vous aidant à écouter votre corps et
           votre esprit, à être attentif à vos ressentis, à vous inscrire dans le
           moment présent, et bien plus.

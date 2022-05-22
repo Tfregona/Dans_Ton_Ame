@@ -28,7 +28,7 @@ export default function SwiperComponent() {
       name: 'Bureau',
       src: '/img/swiper/swiper3.jpg',
       title: 'Le saviez-vous ?',
-      description: 'Le sophrologue est un thérapeute qui utilise la sophrologie comme outil'
+      description: 'Le sophrologue est un thérapeute qui utilise la sophrologie comme outil.'
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export default function SwiperComponent() {
               }}
               className="lg:p-36"
             >
-              <div className="p-10 bg-white/75 rounded-xl rounded-bl-none text-black w-[100vw] md:max-w-[40vw]">
+              <div className="p-10 bg-white/90 rounded-xl rounded-bl-none text-dta_graydark w-[100vw] md:max-w-[40vw]">
                 <p className="whitespace-nowrap font-semibold">{image.title}</p>
                 <p>{image.description}</p>
               </div>

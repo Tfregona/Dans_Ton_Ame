@@ -25,7 +25,7 @@ export default function Sessions() {
     {
       id: 4,
       image: Sessions4,
-      description: 'YOGA NIDRA ET YOGA DU SOUFFLE, COHÉRENCE CARDIAQUE'
+      description: 'YOGA NIDRA ET COHÉRENCE CARDIAQUE'
     }
   ]
   return (
