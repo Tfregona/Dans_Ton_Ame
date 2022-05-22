@@ -186,7 +186,7 @@ export default function Contact() {
                 value={formValues.message}
                 onChange={handleChange}
               />
-              <div class="flex justify-between items-center">
+              <div className="flex justify-between items-center">
                 <button className="rounded border-2 overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 text-white">
                   <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"></span>
                   <span className="relative">Envoyer</span>

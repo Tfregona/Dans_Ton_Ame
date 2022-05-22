@@ -48,10 +48,10 @@ export default function Footer() {
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
                 PRESTATIONS
               </h6>
-              <p class="text-sm">Sophrologie</p>
-              <p class="text-sm">Méditation et relaxation</p>
-              <p class="text-sm">Coaching de vie</p>
-              <p class="text-sm">Yoga nidra et yoga prana, cohérence cardiaque</p>
+              <p className="text-sm">Sophrologie</p>
+              <p className="text-sm">Méditation et relaxation</p>
+              <p className="text-sm">Coaching de vie</p>
+              <p className="text-sm">Yoga nidra et yoga prana, cohérence cardiaque</p>
             </div>
             <div className="space-y-2">
               <h6 className="font-semibold mb-2 flex justify-center md:justify-start">
@@ -201,7 +201,7 @@ export default function Footer() {
             </button>
           </Link>
         </p>
-        <p class="text-sm">
+        <p className="text-sm">
           🍃 Site réalisé par{' '}
           <a
             href="https://fregonatristan.herokuapp.com"
