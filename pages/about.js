@@ -14,20 +14,21 @@ export default function About() {
               JE M’APPELLE ALICIA, J’AI 23 ANS
             </p>
             <p className="indent-8 text-justify">
-              Fibromyalgique et atteinte d’acouphènes depuis quelques années, la
-              sophrologie et les médecines douces sont ce qui ont totalement
-              changé ma vie. Après de nombreuses années de galère avec
-              médicaments et traitements, je me suis finalement tournée vers les
-              médecines alternatives à l’âge de 17 ans afin de trouver une
-              réponse à mes douleurs physiques, émotionnelles, ou bien
-              psychique. Le parcours a été long et je peux être fière de dire
-              que sophrologie, méditation, ou encore naturopathie m’ont sauvé.
-              Attention, je ne dis pas que les traitements ne fonctionnent pas.
-              Je pense simplement que nous sommes bien plus qu’un corps fait de
-              chair. Nous avons une âme, une pensée, et un corps, qui nous
-              écoutent, et qui nous envoient leurs propres messages. À nous de
-              les écouter, de les soigner et de nous re-connecter à nos vraies
-              valeurs…
+              Fibromyalgique depuis maintenant quelques années, je me suis
+              finalement tournée vers les médecines alternatives à l’âge de 17
+              ans afin de trouver une réponse à mes douleurs physiques,
+              émotionnelles, ou bien psychiques. Le parcours a été long et je
+              peux être fière de dire que sophrologie, méditation, ou encore
+              magnétisme ont changé mon quotidien. Attention, je ne dis pas que
+              les traitements ne fonctionnent pas. Je pense simplement que nous
+              sommes bien plus qu’un corps fait de chair. Nous avons une âme,
+              des pensées, et un corps et un esprit, qui nous écoutent, et qui
+              nous envoient leurs propres messages. À nous de décider enfin
+              d’être à leur écoute et de nous re-connecter à nos vraies
+              valeurs... Aujourd’hui, je pense à mon expérience comme un outil
+              puissant qui me permet de comprendre mes clients et d’être à leur
+              écoute en permanence. Que diriez-vous d’un accompagnement à mes
+              côtés dès aujourd’hui ?
             </p>
           </div>
           <div className="hidden lg:flex lg:justify-center">

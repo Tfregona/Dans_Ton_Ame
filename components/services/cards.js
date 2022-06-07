@@ -15,7 +15,7 @@ export default function Cards() {
       id: 2,
       title: 'MEDITATION PLEINE CONSCIENCE',
       description:
-        'Retrouvez la paix intérieure avec des séances de méditation pleine conscience d’environ 1 heure (ou plus) en fonction de l’objectif visé. La méditation pleine conscience est',
+        'Retrouvez la paix intérieure avec des séances de méditation pleine conscience d’environ 1 heure (ou plus) en fonction de l’objectif visé. La méditation pleine conscience est une méditation contemporaine, laïque, épurée de toute connotation spirituelle, religieuse…  afin de l’instaurer comme un outil puissant et efficace dans votre quotidien.',
       image: '/img/services/services2.jpeg'
     },
     {
@@ -28,7 +28,7 @@ export default function Cards() {
     {
       id: 4,
       title: 'YOGA NIDRA ET YOGA PRANA, COHÉRENCE CARDIAQUE',
-      description: 'Lorem',
+      description: 'Des séances de yoga nidra pour apprendre à s’endormir rapidement, améliorer la qualité et la profondeur du sommeil… Des séances de cohérence cardiaque et de yoga pana pour prendre conscience de sa respiration, améliorer le rythme cardiaque, optimiser la concentration.',
       image: '/img/services/services4.jpeg'
     }
   ]

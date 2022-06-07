@@ -36,4 +36,3 @@ yarn-error.log*
 # vercel
 .vercel
 components/test.js
-pages/colors.js
