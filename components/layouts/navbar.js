@@ -75,7 +75,7 @@ export default function Navbar() {
     <div className="h-24">
       <Disclosure
         as="nav"
-        className="bg-dta_graylight mt-0 fixed w-full z-10 top-0"
+        className="shadow-md bg-dta_graylight mt-0 fixed w-full z-10 top-0"
       >
         {({ open }) => (
           <>
