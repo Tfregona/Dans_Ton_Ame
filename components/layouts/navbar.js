@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -10,6 +11,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const router = useRouter()
   const currentPage = router.pathname
+  const [scrollPostion, setScrollPostion] = useState(0)
 
   const NavigationResponsive = [
     { name: 'ACCUEIL', href: '/', current: currentPage === '/' ? true : false },
@@ -71,8 +73,20 @@ export default function Navbar() {
       current: currentPage === '/contact' ? true : false
     }
   ]
+
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPostion(window.scrollY)
+    }
+    window.addEventListener('scroll', updatePosition);
+
+    return () => {
+      window.removeEventListener('scroll', setScrollPostion);
+    };
+  }, []);
+
   return (
-    <div className="h-24">
+    <div className={'h-24'}>
       <Disclosure
         as="nav"
         className="shadow-md bg-dta_graylight mt-0 fixed w-full z-10 top-0"
@@ -118,7 +132,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <img
-                      className="h-24 w-auto cursor-pointer"
+                      className={classNames(scrollPostion > 0 ? "h-16" : 'h-24', 'transition-all w-auto cursor-pointer')}
                       src="/img/logo/rectangle.svg"
                       alt="Logo Dans ton âme"
                     />

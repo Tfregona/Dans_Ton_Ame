@@ -98,6 +98,7 @@ export default function About() {
                 ○ Formation certifiante Udemy en cohérence cardiaque, yoga prana
               </li>
             </ul>
+            <p>Je suis Membre de la Chambre Syndicale de la Sophrologie</p>
           </div>
         </div>
       </div>
