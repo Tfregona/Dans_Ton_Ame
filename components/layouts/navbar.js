@@ -132,7 +132,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <img
-                      className={classNames(scrollPostion > 0 ? "h-16" : 'h-24', 'transition-all w-auto cursor-pointer')}
+                      className={classNames(scrollPostion > 15 ? "h-16" : 'h-24', 'transition-all w-auto cursor-pointer')}
                       src="/img/logo/rectangle.svg"
                       alt="Logo Dans ton âme"
                     />

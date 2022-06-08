@@ -10,10 +10,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Dans ton âme</title>
+        <title>Sophrologue - Alicia Gomes</title>
         <meta
           name="description"
-          content="Dans ton âme, sophrologie en Haute Savoie"
+          content="Dans ton âme - Alicia Gomes, sophrologie en Haute-Savoie Chablais"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
