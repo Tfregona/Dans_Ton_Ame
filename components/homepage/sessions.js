@@ -15,7 +15,7 @@ export default function Sessions() {
     {
       id: 2,
       image: Sessions2,
-      description: 'MÉDITATION ET RELAXATION'
+      description: 'MÉDITATION PLEINE CONSCIENCE'
     },
     {
       id: 3,

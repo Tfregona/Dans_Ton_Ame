@@ -18,14 +18,15 @@ export default function About() {
               finalement tournée vers les médecines alternatives à l’âge de 17
               ans afin de trouver une réponse à mes douleurs physiques,
               émotionnelles, ou bien psychiques. Le parcours a été long et je
-              peux être fière de dire que sophrologie, méditation, ou encore
+              peux être fière de dire que sophrologie, méditation ou encore
               magnétisme ont changé mon quotidien. Attention, je ne dis pas que
               les traitements ne fonctionnent pas. Je pense simplement que nous
               sommes bien plus qu’un corps fait de chair. Nous avons une âme,
-              des pensées, et un corps et un esprit, qui nous écoutent, et qui
-              nous envoient leurs propres messages. À nous de décider enfin
+              des pensées, un corps et un esprit qui nous écoutent, et qui
+              nous envoient leurs propres messages. À nous de décider
               d’être à leur écoute et de nous re-connecter à nos vraies
-              valeurs... Aujourd’hui, je pense à mon expérience comme un outil
+              valeurs... 
+              Aujourd’hui, je pense à mon expérience comme un outil
               puissant qui me permet de comprendre mes clients et d’être à leur
               écoute en permanence. Que diriez-vous d’un accompagnement à mes
               côtés dès aujourd’hui ?
