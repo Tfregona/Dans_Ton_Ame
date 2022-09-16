@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: ['zupimages.net'],
-    minimumCacheTTL: 31536000
-  }
+  images: { loader: 'custom' },
+
+  experimental: {
+    newNextLinkBehavior: true,
+
+    images: {
+      unoptimized: true,
+      allowFutureImage: true,
+
+    },
+  },
 }
 module.exports = nextConfig
 
